@@ -1,13 +1,10 @@
 import styled from "styled-components";
 import { ReactComponent as term } from "../Assets/images/term.png";
-const Container = styled.div`
-  border: 1px solid red;
-  height: 600px;
-  background: grey;
-`;
 
-const Housing = styled.div`
+const Container = styled.div`
   display: flex;
+  background: grey;
+
   height: 70px;
   border: 1px solid red;
   align-items: center;
@@ -82,7 +79,6 @@ export {
   Searchbar,
   Wordhouse,
   Container,
-  Housing,
   Iconhouzing,
   Houseicon,
 };
