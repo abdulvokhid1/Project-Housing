@@ -1,1 +1,36 @@
-export const navbar = [{ id: 1, title: "" }];
+export const navbar = [
+  {
+    id: 1,
+    title: "Homepage",
+    path: "/homepage",
+    element: "",
+    icon: "",
+    child: [],
+  },
+  {
+    id: 2,
+    title: "Listing",
+    path: "/listing",
+    element: "",
+    icon: "",
+    child: [],
+  },
+  { id: 3, title: "News", path: "/news", element: "", icon: "", child: [] },
+  {
+    id: 4,
+    title: "My Profile",
+    path: "/myprofile",
+    element: "",
+    icon: "",
+    child: [],
+  },
+  { id: 5, title: "Pages", path: "/pages", element: "", icon: "", child: [] },
+  {
+    id: 6,
+    title: "Contact",
+    path: "/contact",
+    element: "",
+    icon: "",
+    child: [],
+  },
+];
