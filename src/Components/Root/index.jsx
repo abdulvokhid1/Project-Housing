@@ -7,7 +7,7 @@ export const Root = () => {
   return (
     <Container>
       <Navbar />
-      <Body />
+      {/* <Body /> */}
     </Container>
   );
 };

@@ -14,7 +14,7 @@ const Iconhouzing = styled.div`
   display: flex;
   align-items: center;
 
-  margin-left: 255px;
+  margin-left: 200px;
 `;
 const Houseicon = styled.img`
   /* background: black; */
@@ -47,16 +47,15 @@ const Homemap = styled.h1`
   font-size: 13px;
   line-height: 17px;
   text-transform: uppercase;
-  margin: 0 10px;
-
+  margin: 0 20px;
   color: #ffffff;
 `;
 
 const Buttonlist = styled.div`
   background: #ffffff;
-  border-radius: 3px;
-  width: 140px;
-  height: 35px;
+  border-radius: 5px;
+  width: 120px;
+  height: 33px;
   align-items: center;
 `;
 const Create = styled.div`
