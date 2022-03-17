@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Search } from "./style";
+import { Centerdiv, Container, Middle, Search } from "./style";
 
 export const Homepage = () => {
   return (
     <Container>
-      <Search>Homepage</Search>
+      <Search>
+        <Centerdiv>{/* <Middle>It's great to be home!</Middle> */}</Centerdiv>
+      </Search>
     </Container>
   );
 };

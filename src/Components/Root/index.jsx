@@ -10,7 +10,7 @@ export const Root = () => {
     <Router>
       <Container>
         <Navbar />
-        <Homepage />
+        {/* <Homepage /> */}
       </Container>
     </Router>
   );

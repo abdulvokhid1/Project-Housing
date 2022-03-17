@@ -3,7 +3,8 @@ import term from "../Assets/images/term.png";
 
 const Container = styled.div`
   display: flex;
-  /* background: black; */
+  position: relative;
+  background: black;
   /* background: ${`url(${term})`}; */
   height: 130px;
   background-size: 100% 100%;
