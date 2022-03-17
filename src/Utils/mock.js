@@ -1,8 +1,8 @@
 export const navbar = [
   {
     id: 1,
-    title: "Homepage",
-    path: "/homepage",
+    title: "Home",
+    path: "/home",
     element: "",
     icon: "",
     child: [],

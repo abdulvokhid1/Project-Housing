@@ -3,15 +3,16 @@ import term from "../Assets/images/term.png";
 
 const Container = styled.div`
   display: flex;
-  background: ${`url(${term})`};
+  /* background: black; */
+  /* background: ${`url(${term})`}; */
   height: 130px;
   background-size: 100% 100%;
   object-fit: cover;
   background-repeat: no-repeat;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
-  /* align-items: center;
-  justify-content: space-between; */
+  align-items: center;
+  justify-content: space-between;
 `;
 const Iconhouzing = styled.div`
   display: flex;
@@ -73,6 +74,7 @@ const Create = styled.div`
   text-align: center;
   margin-top: 8px;
 `;
+
 export {
   Create,
   Buttonlist,
