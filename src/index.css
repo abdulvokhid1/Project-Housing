@@ -3,3 +3,13 @@ body {
   padding: 0%;
   box-sizing: border-box;
 }
+.navlink {
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 0 20px;
+  color: #ffffff;
+}

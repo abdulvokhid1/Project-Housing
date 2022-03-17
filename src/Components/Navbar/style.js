@@ -1,14 +1,17 @@
 import styled from "styled-components";
-import { ReactComponent as term } from "../Assets/images/term.png";
+import term from "../Assets/images/term.png";
 
 const Container = styled.div`
   display: flex;
-  background: grey;
-
-  height: 70px;
+  background: ${`url(${term})`};
+  height: 130px;
+  background-size: 100% 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
   border: 1px solid red;
-  align-items: center;
-  justify-content: space-between;
+
+  /* align-items: center;
+  justify-content: space-between; */
 `;
 const Iconhouzing = styled.div`
   display: flex;
