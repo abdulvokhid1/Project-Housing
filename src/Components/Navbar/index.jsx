@@ -26,7 +26,16 @@ export const Navbar = () => {
         <Home>
           {navbar.map((value) => {
             return (
-              <NavLink className={"navlink"} to={value.path} key={value.id}>
+              <NavLink
+                style={({ isActive }) => {
+                  return {
+                    fontWeight: isActive ? "50px" : null,
+                  };
+                }}
+                className={"navlink"}
+                to={value.path}
+                key={value.id}
+              >
                 {value.title}
               </NavLink>
             );
