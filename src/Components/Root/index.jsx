@@ -11,8 +11,8 @@ export const Root = () => {
     <Router>
       <Container>
         <Navbar />
-        <Body />
-        {/* <Homepage /> */}
+        {/* <Body /> */}
+        <Homepage />
       </Container>
     </Router>
   );

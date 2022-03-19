@@ -29,7 +29,7 @@ export const Navbar = () => {
               <NavLink
                 style={({ isActive }) => {
                   return {
-                    fontWeight: isActive ? "50px" : null,
+                    color: isActive ? "red" : "purple",
                   };
                 }}
                 className={"navlink"}
