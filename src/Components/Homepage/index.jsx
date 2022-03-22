@@ -1,5 +1,6 @@
 import React from "react";
 import { buymap } from "../../mock";
+import { NavLink } from "react-router-dom";
 import {
   Button,
   Buy,
@@ -12,6 +13,12 @@ import {
   Searchword,
   Type,
   Location,
+  Locationtype,
+  Locationall,
+  Searchtype,
+  Searchenter,
+  Propertytype,
+  Property,
 } from "./style";
 
 export const Homepage = () => {
@@ -23,16 +30,35 @@ export const Homepage = () => {
           <Middlebig>Find Your Perfect Home</Middlebig>
           <Buymap>
             {buymap.map((value) => {
-              return <Buy>{value.title}</Buy>;
+              return (
+                <NavLink
+                  to={value.path}
+                  key={value.id}
+                  className={"homenavlink"}
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "black" : "purple",
+                    };
+                  }}
+                >
+                  {value.title}
+                </NavLink>
+              );
             })}
           </Buymap>
           <Button>
             <Type>
-              <p>Type</p>
-              <p>Property Type</p>
+              <Propertytype>Type</Propertytype>
+              <Property>Property Type</Property>
             </Type>
-            <Location></Location>
-            <Searchword></Searchword>
+            <Location>
+              <Locationtype>Location</Locationtype>
+              <Locationall>All Cities</Locationall>
+            </Location>
+            <Searchword>
+              <Searchtype>Search</Searchtype>
+              <Searchenter>Enter Keywords</Searchenter>
+            </Searchword>
           </Button>
         </Centerdiv>
       </Search>

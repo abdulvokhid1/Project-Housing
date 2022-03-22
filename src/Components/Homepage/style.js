@@ -6,6 +6,7 @@ const Container = styled.div`
   height: 1500px;
   position: absolute;
   position: sticky;
+  position: absolute;
 `;
 
 const Search = styled.div`
@@ -19,11 +20,13 @@ const Search = styled.div`
 
 const Centerdiv = styled.div`
   border: 1px solid red;
-  width: 600px;
+  width: 700px;
   height: 400px;
-  /* margin-top: 40px; */
   justify-content: center;
   background: red;
+  position: relative;
+  top: 190px;
+  left: 400px;
 `;
 const Middle = styled.p`
   font-family: "Cerebri Sans";
@@ -47,7 +50,7 @@ const Middlebig = styled.p`
 `;
 const Buymap = styled.div`
   display: flex;
-  margin-left: 210px;
+  margin-left: 260px;
 `;
 const Buy = styled.p`
   display: flex;
@@ -66,16 +69,82 @@ const Button = styled.div`
   box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
   border-radius: 3px;
   border: 1px solid black;
-  height: 50px;
+  height: 70px;
+  display: flex;
 `;
-const Type = styled.p`
-  border-bottom: 1px solid black;
+const Type = styled.div`
+  border: 1px solid blue;
   width: 190px;
 `;
-const Location = styled.p``;
-const Searchword = styled.p``;
+const Propertytype = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #0d263b;
+`;
+const Property = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+
+const Location = styled.div`
+  border: 1px solid blue;
+  width: 190px;
+`;
+const Locationtype = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #0d263b;
+`;
+const Locationall = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+
+const Searchword = styled.div`
+  border: 1px solid blue;
+  width: 190px;
+`;
+const Searchtype = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #0d263b;
+`;
+const Searchenter = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
 
 export {
+  Property,
+  Propertytype,
+  Searchtype,
+  Searchenter,
+  Locationall,
+  Locationtype,
   Type,
   Location,
   Searchword,
