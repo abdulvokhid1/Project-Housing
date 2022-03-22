@@ -60,8 +60,6 @@ const Buy = styled.p`
   font-size: 16px;
   line-height: 20px;
   margin: 10px 10px;
-  /* Color / 5 */
-
   color: #ffffff;
 `;
 const Button = styled.div`
