@@ -3,6 +3,7 @@ import term from "../Assets/images/term.png";
 
 const Container = styled.div`
   display: flex;
+  /* flex-direction: column; */
   position: relative;
   background: black;
   /* background: ${`url(${term})`}; */

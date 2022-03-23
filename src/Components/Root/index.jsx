@@ -1,18 +1,24 @@
 import React from "react";
 import { Container } from "./style";
 import Navbar from "../Navbar";
-// import Body from "../Body";
 import { BrowserRouter as Router } from "react-router-dom";
 import Homepage from "../Homepage";
-import Body from "../Body";
+import { Route, Routes } from "react-router-dom";
+import { navbar } from "../../Utils/mock";
 
 export const Root = () => {
   return (
     <Router>
       <Container>
-        <Navbar />
-        {/* <Body /> */}
-        <Homepage />
+        {/* <Navbar /> */}
+        <Routes>
+          <Route element={<Navbar />}>
+            {navbar.map((value) => {
+              return <Route path={value?.path} element={value.element} />;
+            })}
+          </Route>
+        </Routes>
+        {/* <Homepage /> */}
       </Container>
     </Router>
   );

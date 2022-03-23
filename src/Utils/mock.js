@@ -1,9 +1,16 @@
+import Buy from "../Components/Buy";
+import Sell from "../Components/Sell";
+import Rent from "../Components/Rent";
+// import myprofile, { Myprofile } from "../Components/myprofile";
+import Myhome from "../Components/Myhome";
+import Register from "../Components/Register";
+import Myprofile from "../Components/Myprofile";
 export const navbar = [
   {
     id: 1,
     title: "Buy",
     path: "/buy",
-    element: "",
+    element: <Buy />,
     icon: "",
     child: [],
   },
@@ -11,24 +18,31 @@ export const navbar = [
     id: 2,
     title: "Sell",
     path: "/sell",
-    element: "",
+    element: <Sell />,
     icon: "",
     child: [],
   },
-  { id: 3, title: "Rent", path: "/rent", element: "", icon: "", child: [] },
+  {
+    id: 3,
+    title: "Rent",
+    path: "/rent",
+    element: <Rent />,
+    icon: "",
+    child: [],
+  },
   {
     id: 4,
-    title: "My Profile",
+    title: "MyProfile",
     path: "/myprofile",
-    element: "",
+    element: <Myprofile />,
     icon: "",
     child: [],
   },
   {
     id: 5,
     title: "My home",
-    path: "/my home",
-    element: "",
+    path: "/myhome",
+    element: <Myhome />,
     icon: "",
     child: [],
   },
@@ -36,7 +50,7 @@ export const navbar = [
     id: 6,
     title: "Register",
     path: "/register",
-    element: "",
+    element: <Register />,
     icon: "",
     child: [],
   },
