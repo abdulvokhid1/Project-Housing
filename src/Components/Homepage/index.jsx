@@ -35,11 +35,6 @@ export const Homepage = () => {
                   to={value.path}
                   key={value.id}
                   className={"homenavlink"}
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "black" : "purple",
-                    };
-                  }}
                 >
                   {value.title}
                 </NavLink>
