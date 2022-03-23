@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   /* flex-direction: column; */
   position: relative;
-  background: black;
+  /* background: black; */
   /* background: ${`url(${term})`}; */
   height: 130px;
   background-size: 100% 100%;
@@ -23,7 +23,7 @@ const Iconhouzing = styled.div`
   margin-left: 200px;
 `;
 const Houseicon = styled.img`
-  /* background: black; */
+  background: blue;
   width: 40px;
   height: 48px;
 `;
@@ -33,7 +33,7 @@ const Wordhouse = styled.p`
   font-weight: 700;
   font-size: 25px;
   line-height: 32px;
-  color: #ffffff;
+  color: #0061df;
   margin-left: 14px;
 `;
 
@@ -59,7 +59,8 @@ const Homemap = styled.h1`
 
 const Buttonlist = styled.div`
   background: #ffffff;
-  border-radius: 5px;
+  border-radius: 8px;
+  border: 1px solid #0061df;
   width: 120px;
   height: 33px;
   align-items: center;

@@ -12,13 +12,15 @@ import {
 } from "./style";
 import house from "../Assets/icons/house.png";
 import { navbar } from "../../Utils/mock";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import term from "../Assets/images/term.png";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Container>
+        <h1 onClick={() => navigate("/homepage")}>Logo</h1>
         <Iconhouzing>
           <Houseicon src={house} />
           <Wordhouse>Houzing</Wordhouse>
