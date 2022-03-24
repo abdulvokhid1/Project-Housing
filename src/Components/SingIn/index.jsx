@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import bigicon from "../Assets/icons/bigicon.png";
+import password from "../Assets/icons/password.png";
 import {
   Account,
   Accountsmall,
@@ -12,7 +13,21 @@ import {
   Bigicon,
   Contactus,
   Webbar,
-  Wrappersign,
+  Signword,
+  Inputword,
+  Divinput,
+  Loginword,
+  Divregister,
+  Passwordword,
+  Divremember,
+  Rememberme,
+  Forgot,
+  Iconpasword,
+  Wordme,
+  Divbutton,
+  Username,
+  Agensy,
+  Demo,
 } from "./style";
 import { useNavigate } from "react-router-dom";
 
@@ -58,25 +73,38 @@ export const Signin = () => {
       </Wrapper>
       <Registerpage>
         <Signinpage>
-          <Wrappersign>
-            <h1>login</h1>
-            <input
+          <Signword>Sign in</Signword>
+          <Divinput>
+            <Loginword>Login</Loginword>
+            <Inputword
               value={state.email}
               name="email"
               type="email"
-              placeholder="enter you email"
+              placeholder="Email"
               onChange={onChange}
             />
-            <input
+          </Divinput>
+          <Divregister>
+            <Passwordword
               value={state.password}
               name="password"
               type="password"
-              placeholder="enter your password"
+              placeholder="Password"
               onChange={onChange}
             />
-            <br />
-            <button onClick={login}>register</button>
-          </Wrappersign>
+            <Divremember>
+              <Rememberme>
+                <Iconpasword src={password} />
+                <Wordme>Remember me</Wordme>
+              </Rememberme>
+              <Forgot>Forgot</Forgot>
+            </Divremember>
+          </Divregister>
+          <Divbutton onClick={login}>Sign In</Divbutton>
+          <Username>
+            <Agensy>Username: agency or agent</Agensy>
+            <Demo>Password: demo</Demo>
+          </Username>
         </Signinpage>
         <Registrationpage>Register</Registrationpage>
       </Registerpage>
