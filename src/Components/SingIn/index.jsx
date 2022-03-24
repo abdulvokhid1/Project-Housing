@@ -28,12 +28,23 @@ import {
   Username,
   Agensy,
   Demo,
+  Wordreg,
+  Regbutton,
+  Loginput,
+  Nameinput,
+  Lastinput,
+  Userinput,
+  Passinput,
+  Repassinput,
+  Emailinput,
+  Littlebar,
 } from "./style";
 import { useNavigate } from "react-router-dom";
 
 const { REACT_APP_BASE_URL: url } = process.env;
 export const Signin = () => {
   const navigate = useNavigate();
+  console.log(url);
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -106,7 +117,19 @@ export const Signin = () => {
             <Demo>Password: demo</Demo>
           </Username>
         </Signinpage>
-        <Registrationpage>Register</Registrationpage>
+        <Registrationpage>
+          <Littlebar>
+            <Wordreg>Registration</Wordreg>
+            <Loginput type="text" placeholder="login" />
+            <Nameinput type="text" placeholder="First name" />
+            <Lastinput type="text" placeholder="Last name" />
+            <Emailinput type="email" placeholder="Email" />
+            <Userinput type="text" placeholder="User role" />
+            <Passinput type="password" placeholder="Password" />
+            <Repassinput type="password" placeholder="Re-enter password" />
+            <Regbutton>Register</Regbutton>
+          </Littlebar>
+        </Registrationpage>
       </Registerpage>
       <Contactbar>
         <Bigicon>

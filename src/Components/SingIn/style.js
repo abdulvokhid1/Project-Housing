@@ -51,21 +51,6 @@ const Signinpage = styled.div`
   box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
   border-radius: 3px;
 `;
-const Registrationpage = styled.div`
-  height: 500px;
-  width: 500px;
-  border: 1px solid red;
-  flex: 1;
-  margin-right: 225px;
-  margin-left: 15px;
-  margin-top: 30px;
-  /* background: #ffffff; */
-  background: #ffffff;
-
-  border: 1px solid #e6e9ec;
-  box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
-  border-radius: 3px;
-`;
 // const Wrappersign = styled.div`
 //   /* margin-top: 50px; */
 //   border: 1px solid black;
@@ -98,7 +83,10 @@ const Loginword = styled.p`
 const Inputword = styled.input`
   border: none;
   width: 100%;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #e6e9ec;
+  height: 20px;
+  margin: 5px 0;
+  outline: none;
 `;
 const Divregister = styled.div`
   margin-top: 40px;
@@ -107,7 +95,11 @@ const Divregister = styled.div`
 `;
 const Passwordword = styled.input`
   border: none;
-  border-bottom: 1px solid blue;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 20px;
+  margin: 5px 0;
+  outline: none;
   width: 100%;
 `;
 const Divremember = styled.div`
@@ -167,6 +159,99 @@ const Demo = styled.p`
   line-height: 26px;
   color: #696969;
 `;
+const Registrationpage = styled.div`
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  border: 1px solid red;
+  flex: 1;
+  margin-right: 225px;
+  margin-left: 15px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #e6e9ec;
+  box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
+  border-radius: 3px;
+`;
+const Littlebar = styled.div`
+  /* margin: 30px; */
+`;
+const Loginput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+  width: 100%;
+`;
+const Nameinput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+`;
+const Lastinput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+`;
+const Emailinput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+`;
+const Userinput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+`;
+const Passinput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+`;
+const Repassinput = styled.input`
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  height: 33px;
+  margin: 5px 0;
+  outline: none;
+`;
+const Regbutton = styled.button`
+  color: white;
+  background: #0d263b;
+  border-radius: 3px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  margin-top: 50px;
+`;
+const Wordreg = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #0d263b;
+`;
 const Contactbar = styled.div`
   height: 420px;
   border: 1px solid black;
@@ -193,6 +278,16 @@ const Contactus = styled.p`
 `;
 const Addressone = styled.div``;
 export {
+  Littlebar,
+  Loginput,
+  Regbutton,
+  Nameinput,
+  Lastinput,
+  Userinput,
+  Emailinput,
+  Passinput,
+  Repassinput,
+  Wordreg,
   Demo,
   Agensy,
   Username,
