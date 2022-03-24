@@ -23,7 +23,7 @@ const Iconhouzing = styled.div`
   margin-left: 200px;
 `;
 const Houseicon = styled.img`
-  background: blue;
+  /* background: blue; */
   width: 40px;
   height: 48px;
 `;
@@ -33,7 +33,7 @@ const Wordhouse = styled.p`
   font-weight: 700;
   font-size: 25px;
   line-height: 32px;
-  color: #0061df;
+  color: black;
   margin-left: 14px;
 `;
 
@@ -54,7 +54,7 @@ const Homemap = styled.h1`
   line-height: 17px;
   text-transform: uppercase;
   margin: 0 20px;
-  color: #ffffff;
+  color: black;
 `;
 
 const Buttonlist = styled.div`

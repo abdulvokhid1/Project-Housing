@@ -10,7 +10,7 @@ import {
   Buttonlist,
   Create,
 } from "./style";
-import house from "../Assets/icons/house.png";
+import rangli from "../Assets/icons/rangli.png";
 import { navbar } from "../../Utils/mock";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import term from "../Assets/images/term.png";
@@ -22,7 +22,7 @@ export const Navbar = () => {
       <Container>
         <h1 onClick={() => navigate("/homepage")}>Logo</h1>
         <Iconhouzing>
-          <Houseicon src={house} />
+          <Houseicon src={rangli} />
           <Wordhouse>Houzing</Wordhouse>
         </Iconhouzing>
         <Searchbar>
@@ -32,7 +32,7 @@ export const Navbar = () => {
                 <NavLink
                   style={({ isActive }) => {
                     return {
-                      color: isActive ? "red" : "purple",
+                      color: isActive ? "red" : "black",
                     };
                   }}
                   className={"navlink"}
