@@ -3,7 +3,7 @@ import Sell from "../Components/Sell";
 import Rent from "../Components/Rent";
 // import myprofile, { Myprofile } from "../Components/myprofile";
 import Myhome from "../Components/Myhome";
-import Register from "../Components/Register";
+import SignIn from "../Components/SingIn";
 import Myprofile from "../Components/Myprofile";
 import Homepage from "../Components/Homepage";
 export const navbar = [
@@ -49,9 +49,9 @@ export const navbar = [
   },
   {
     id: 6,
-    title: "Register",
-    path: "/register",
-    element: <Register />,
+    title: "Singin",
+    path: "/signin",
+    element: <SignIn />,
     icon: "",
     child: [],
   },

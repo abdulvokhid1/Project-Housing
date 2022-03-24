@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Homepage from "../Homepage";
 import { Route, Routes } from "react-router-dom";
 import { navbar } from "../../Utils/mock";
+import Myhome from "../Myhome";
 
 export const Root = () => {
   return (
@@ -13,8 +14,9 @@ export const Root = () => {
         {/* <Navbar /> */}
         <Routes>
           <Route element={<Navbar />}>
+            <Route path="/" element={<Myhome />} />
             {navbar.map((value) => {
-              return <Route path={value?.path} element={value.element} />;
+              return <Route exact path={value?.path} element={value.element} />;
             })}
           </Route>
         </Routes>
