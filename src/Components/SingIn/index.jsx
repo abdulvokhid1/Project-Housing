@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 // import bigicon from "../Assets/icons/bigicon.png";
 import password from "../Assets/icons/password.png";
+import address from "../Assets/icons/address.png";
+import tell from "../Assets/icons/tell.png";
+import message from "../Assets/icons/message.png";
+import facebook from "../Assets/icons/facebook.png";
+import instagram from "../Assets/icons/instagram.png";
+import intime from "../Assets/icons/intime.png";
+import twitter from "../Assets/icons/twitter.png";
 import {
   Account,
   Accountsmall,
@@ -38,6 +45,26 @@ import {
   Repassinput,
   Emailinput,
   Littlebar,
+  Addressone,
+  Iconaddress,
+  Street,
+  Iconaddresstwo,
+  Streetwo,
+  Addresstwo,
+  Addressthree,
+  Iconaddressthree,
+  Streethree,
+  Website,
+  Face,
+  Insta,
+  Intime,
+  Twit,
+  Discover,
+  Discoverword,
+  Chicago,
+  Miami,
+  New,
+  Los,
 } from "./style";
 import { useNavigate } from "react-router-dom";
 
@@ -135,8 +162,36 @@ export const Signin = () => {
         <Bigicon>
           <Webbar>
             <Contactus>Contact Us</Contactus>
+            <Addressone>
+              <Iconaddress src={address} />
+              <Street>
+                329 Queensberry Street, North Melbourne VIC 3051, Australia.
+              </Street>
+            </Addressone>
+            <Addresstwo>
+              <Iconaddresstwo src={tell} />
+              <Streetwo>123 456 7890</Streetwo>
+            </Addresstwo>
+            <Addressthree>
+              <Iconaddressthree src={message} />
+              <Streethree>support@houzing.com</Streethree>
+            </Addressthree>
+            <Website>
+              <Face src={facebook} />
+              <Twit src={twitter} />
+              <Insta src={instagram} />
+              <Intime src={intime} />
+            </Website>
           </Webbar>
         </Bigicon>
+        <br />
+        <Discover>
+          <Discoverword>Discover</Discoverword>
+          <Chicago>Chicago</Chicago>
+          <Los>Los Angeles</Los>
+          <Miami>Miami</Miami>
+          <New>New York</New>
+        </Discover>
       </Contactbar>
     </Container>
   );

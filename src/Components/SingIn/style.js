@@ -4,7 +4,6 @@ import bigicon from "../Assets/icons/bigicon.png";
 const Container = styled.div`
   height: 1220px;
   width: 100%;
-  border: 1px solid red;
   background: #ffffff;
   box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
 `;
@@ -254,20 +253,28 @@ const Wordreg = styled.p`
 `;
 const Contactbar = styled.div`
   height: 420px;
-  border: 1px solid black;
+  border: 1px solid red;
   background: #0d263b;
+  display: flex;
+  padding: 30px 30px;
 `;
 
 const Bigicon = styled.div`
   height: 350px;
   border: 1px solid black;
   width: 290px;
-  margin-left: 50px;
-  margin-top: 43px;
+  /* margin-left: 50px;
+  margin-top: 43px; */
   background: ${`url(${bigicon})`};
   background-size: cover;
 `;
-const Webbar = styled.div``;
+const Webbar = styled.div`
+  border: 1px solid red;
+  height: 230px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 30px;
+`;
 const Contactus = styled.p`
   font-family: "Cerebri Sans";
   font-style: normal;
@@ -276,8 +283,156 @@ const Contactus = styled.p`
   line-height: 20px;
   color: #ffffff;
 `;
-const Addressone = styled.div``;
+const Addressone = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Iconaddress = styled.img`
+  width: 30px;
+  height: 20px;
+`;
+const Street = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 1px;
+  line-height: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+`;
+const Addresstwo = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Iconaddresstwo = styled.img`
+  width: 23px;
+  height: 13px;
+`;
+const Streetwo = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 1px;
+  line-height: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+`;
+const Addressthree = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Iconaddressthree = styled.img`
+  width: 22px;
+  height: 12px;
+`;
+const Streethree = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 1px;
+  line-height: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+`;
+const Website = styled.div`
+  display: flex;
+  margin-top: 10px;
+`;
+const Face = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Insta = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Twit = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Intime = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Discover = styled.div`
+  border: 1px solid red;
+  width: 200px;
+  height: 250px;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
+`;
+const Discoverword = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+`;
+const Chicago = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
+`;
+const Los = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+`;
+const Miami = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  /* or 286% */
+
+  /* Color / 5 */
+
+  color: #ffffff;
+`;
+const New = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  /* or 286% */
+
+  /* Color / 5 */
+
+  color: #ffffff;
+`;
 export {
+  Los,
+  Miami,
+  New,
+  Chicago,
+  Discoverword,
+  Discover,
+  Face,
+  Insta,
+  Twit,
+  Intime,
+  Website,
+  Addressthree,
+  Iconaddressthree,
+  Streethree,
+  Addresstwo,
+  Iconaddresstwo,
+  Streetwo,
+  Addressone,
+  Iconaddress,
+  Street,
   Littlebar,
   Loginput,
   Regbutton,
