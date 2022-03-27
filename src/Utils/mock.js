@@ -5,18 +5,26 @@ import Rent from "../Components/Rent";
 import Myhome from "../Components/Myhome";
 import SignIn from "../Components/SingIn";
 import Myprofile from "../Components/Myprofile";
-import Homepage from "../Components/Homepage";
+import Home from "../Components/Home";
 export const navbar = [
   {
     id: 1,
-    title: "Buy",
-    path: "/homepage",
-    element: <Homepage />,
+    title: "Home",
+    path: "/home",
+    element: <Home />,
     icon: "",
     child: [],
   },
   {
     id: 2,
+    title: "Buy",
+    path: "/buy",
+    element: <Buy />,
+    icon: "",
+    child: [],
+  },
+  {
+    id: 3,
     title: "Sell",
     path: "/sell",
     element: <Sell />,
@@ -24,7 +32,7 @@ export const navbar = [
     child: [],
   },
   {
-    id: 3,
+    id: 4,
     title: "Rent",
     path: "/rent",
     element: <Rent />,
@@ -32,18 +40,10 @@ export const navbar = [
     child: [],
   },
   {
-    id: 4,
+    id: 5,
     title: "MyProfile",
     path: "/myprofile",
     element: <Myprofile />,
-    icon: "",
-    child: [],
-  },
-  {
-    id: 5,
-    title: "My home",
-    path: "/myhome",
-    element: <Myhome />,
     icon: "",
     child: [],
   },

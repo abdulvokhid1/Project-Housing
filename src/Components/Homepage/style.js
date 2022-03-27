@@ -12,21 +12,28 @@ const Container = styled.div`
 const Search = styled.div`
   width: 100%;
   height: 700px;
-  background: ${`url(${landing})`};
+  /* background: ${`url(${landing})`}; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 5px 0 225px;
+  background-color: #7a8691;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${landing});
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* opacity: 0.6; */
+  background-size: cover;
 `;
 
 const Centerdiv = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 700px;
   height: 400px;
   justify-content: center;
-  background: red;
+  /* background: red; */
   position: relative;
-  top: 190px;
-  left: 400px;
+  left: 170px;
 `;
 const Middle = styled.p`
   font-family: "Cerebri Sans";
