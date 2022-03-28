@@ -4,9 +4,9 @@ import Navbar from "../Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
 // import Myhome from "../Myhome";
 import { Route, Routes } from "react-router-dom";
-import { navbar } from "../../Utils/mock";
 import Myhome from "../Myhome";
 import Homepage from "../Homepage";
+import { navbar } from "../../Utils/mock";
 
 export const Root = () => {
   return (

@@ -7,6 +7,7 @@ import SignIn from "../Components/SingIn";
 import Myprofile from "../Components/Myprofile";
 import Homepage from "../Components/Homepage";
 // import Myhome from "../Components/Myhome";
+import { ReactComponent as dashboard } from "../Components/Assets/icons/dashboard.svg";
 export const navbar = [
   {
     id: 1,
@@ -55,5 +56,49 @@ export const navbar = [
     element: <SignIn />,
     icon: "",
     child: [],
+  },
+];
+
+export const dashbar = [
+  { id: 1, icon: { dashboard }, title: "Dashboard" },
+  {
+    id: 2,
+    icon: "",
+    title: "My Profile",
+  },
+  {
+    id: 3,
+    icon: "",
+    title: "My Proporties List",
+  },
+  {
+    id: 3,
+    icon: "",
+    title: "Add New Property",
+  },
+  {
+    id: 4,
+    icon: "",
+    title: "Favorites",
+  },
+  {
+    id: 5,
+    icon: "",
+    title: "Saved Searches",
+  },
+  {
+    id: 6,
+    icon: { dashboard },
+    title: "My Invoices",
+  },
+  {
+    id: 7,
+    icon: "",
+    title: "Inbox",
+  },
+  {
+    id: 8,
+    icon: "",
+    title: "Logout",
   },
 ];

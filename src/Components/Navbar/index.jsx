@@ -11,9 +11,9 @@ import {
   Create,
 } from "./style";
 import rangli from "../Assets/icons/rangli.png";
-import { navbar } from "../../Utils/mock";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import term from "../Assets/images/term.png";
+import { navbar } from "../../Utils/mock";
 
 export const Navbar = () => {
   const navigate = useNavigate();

@@ -12,7 +12,8 @@ const Container = styled.div`
   object-fit: cover;
   background-repeat: no-repeat;
   /* border: 1px solid red; */
-
+  border-bottom: 1px solid #e6e9ec;
+  box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
   align-items: center;
   justify-content: space-between;
 `;
