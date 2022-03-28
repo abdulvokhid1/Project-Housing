@@ -136,6 +136,7 @@ const Divbutton = styled.button`
   width: 100%;
   height: 45px;
   border: none;
+  cursor: pointer;
 `;
 const Username = styled.div`
   height: 100px;

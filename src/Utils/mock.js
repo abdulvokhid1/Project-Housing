@@ -5,13 +5,14 @@ import Rent from "../Components/Rent";
 import Myhome from "../Components/Myhome";
 import SignIn from "../Components/SingIn";
 import Myprofile from "../Components/Myprofile";
-import Home from "../Components/Home";
+import Homepage from "../Components/Homepage";
+// import Myhome from "../Components/Myhome";
 export const navbar = [
   {
     id: 1,
     title: "Home",
     path: "/home",
-    element: <Home />,
+    element: <Homepage />,
     icon: "",
     child: [],
   },
