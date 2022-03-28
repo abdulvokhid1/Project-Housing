@@ -16,6 +16,7 @@ const Mapwrapper = styled.h1`
   font-size: 14px;
   line-height: 56px;
   color: #0d263b;
+  margin: 0 10px;
 `;
 
 export { Mapwrapper, Wrapper, Container };
