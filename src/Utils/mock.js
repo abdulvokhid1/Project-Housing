@@ -86,31 +86,31 @@ export const dashbar = [
     child: [],
   },
   {
-    id: 4,
+    id: 5,
     icon: "",
     title: "Favorites",
     child: [],
   },
   {
-    id: 5,
+    id: 6,
     icon: "",
     title: "Saved Searches",
     child: [],
   },
   {
-    id: 6,
+    id: 7,
     icon: { dashboard },
     title: "My Invoices",
     child: [],
   },
   {
-    id: 7,
+    id: 8,
     icon: "",
     title: "Inbox",
     child: [],
   },
   {
-    id: 8,
+    id: 9,
     icon: "",
     title: "Logout",
     child: [],
@@ -141,5 +141,43 @@ export const proporty = [
     icon: [],
     amount: "148",
     title: "Total Favorites",
+  },
+];
+
+export const recentcode = [
+  {
+    id: 1,
+    icon: [],
+    title: "Your listing Luxury Family Home has been approved!.",
+  },
+  {
+    id: 2,
+    icon: [],
+    title: "Kathy Brown left a review on Renovated Apartment",
+  },
+  {
+    id: 3,
+    icon: [],
+    title: "Someone favorites your Gorgeous Villa Bay View listing!",
+  },
+  {
+    id: 4,
+    icon: [],
+    title: "Your listing Luxury Family Home has been approved!",
+  },
+  {
+    id: 5,
+    icon: [],
+    title: "Kathy Brown left a review on Renovated Apartment",
+  },
+  {
+    id: 6,
+    icon: [],
+    title: "Someone favorites your Gorgeous Villa Bay View listing!",
+  },
+  {
+    id: 7,
+    icon: [],
+    title: "Your listing Luxury Family Home has been approved!.",
   },
 ];

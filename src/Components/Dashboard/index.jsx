@@ -7,7 +7,7 @@ export const Dashboard = () => {
     <Container>
       {dashbar.map((value) => {
         return (
-          <Wrapper>
+          <Wrapper key={value.id}>
             <Mapwrapper>{value.title}</Mapwrapper>
           </Wrapper>
         );
