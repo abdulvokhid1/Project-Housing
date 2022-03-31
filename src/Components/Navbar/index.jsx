@@ -20,7 +20,7 @@ export const Navbar = () => {
   return (
     <>
       <Container>
-        <h1 onClick={() => navigate("/signin")}>Sign in</h1>
+        {/* <h1 onClick={() => navigate("/signin")}>Sign in</h1> */}
         <Iconhouzing>
           <Houseicon src={rangli} />
           <Wordhouse>Houzing</Wordhouse>

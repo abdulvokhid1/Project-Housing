@@ -9,6 +9,7 @@ import Homepage from "../Homepage";
 import { dashbar, navbar } from "../../Utils/mock";
 import Dashboard from "../Dashboard";
 import Myprofile from "../Myprofile";
+import Profile from "../Profile";
 
 export const Root = () => {
   return (
@@ -22,15 +23,16 @@ export const Root = () => {
               return <Route exact path={value?.path} element={value.element} />;
             })}
           </Route>
-        </Routes>
-        {/* <Routes>
-          <Route element={<Myprofile />}>
-            <Route path="myprofile" element={<Dashboard />} />
+
+          {/* <Route element={<Navbar />} /> */}
+          <Route element={<Dashboard />}>
+            {/* <Route element={<Dashboard />} /> */}
             {dashbar.map((value) => {
               return <Route exact path={value?.path} element={value.element} />;
             })}
           </Route>
-        </Routes> */}
+        </Routes>
+
         {/* <Homepage /> */}
       </Container>
     </Router>
