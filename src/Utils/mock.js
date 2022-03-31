@@ -4,11 +4,20 @@ import Rent from "../Components/Rent";
 // import myprofile, { Myprofile } from "../Components/myprofile";
 import Myhome from "../Components/Myhome";
 import SignIn from "../Components/SingIn";
-import Myprofile from "../Components/Myprofile";
+import Dashboard from "../Components/Dashboard";
 import home from "../Components/Assets/icons/home.png";
 import Homepage from "../Components/Homepage";
 // import Myhome from "../Components/Myhome";
 import { ReactComponent as dashboard } from "../Components/Assets/icons/dashboard.svg";
+import Myprofile from "../Components/Myprofile";
+import Profile from "../Components/Profile";
+import Propertylist from "../Components/Propertylist";
+import Addproperty from "../Components/Addproperty";
+import Favorites from "../Components/Favorites";
+import SavedSearches from "../Components/SavedSearches";
+import Invoices from "../Components/Invoices";
+import Inbox from "../Components/Inbox";
+import Loggingout from "../Components/Loggingout";
 export const navbar = [
   {
     id: 1,
@@ -63,56 +72,74 @@ export const navbar = [
 export const dashbar = [
   {
     id: 1,
-    icon: `${dashboard}`,
     title: "Dashboard",
+    path: "/dashboard",
+    element: <Myprofile />,
+    icon: "",
     child: [],
   },
   {
     id: 2,
-    icon: "",
     title: "My Profile",
+    path: "/profile",
+    element: <Profile />,
+    icon: "",
     child: [],
   },
   {
     id: 3,
-    icon: "",
     title: "My Proporties List",
+    path: "/propertylist",
+    element: <Propertylist />,
+    icon: "",
     child: [],
   },
   {
     id: 4,
-    icon: "",
     title: "Add New Property",
+    path: "/addproperty",
+    element: <Addproperty />,
+    icon: "",
     child: [],
   },
   {
     id: 5,
-    icon: "",
     title: "Favorites",
+    path: "/favorites",
+    element: <Favorites />,
+    icon: "",
     child: [],
   },
   {
     id: 6,
-    icon: "",
     title: "Saved Searches",
+    path: "/searches",
+    element: <SavedSearches />,
+    icon: "",
     child: [],
   },
   {
     id: 7,
-    icon: { dashboard },
     title: "My Invoices",
+    path: "/invoices",
+    element: <Invoices />,
+    icon: "",
     child: [],
   },
   {
     id: 8,
-    icon: "",
     title: "Inbox",
+    path: "/inbox",
+    element: <Inbox />,
+    icon: "",
     child: [],
   },
   {
     id: 9,
-    icon: "",
     title: "Logout",
+    path: "/logout",
+    element: <Loggingout />,
+    icon: "",
     child: [],
   },
 ];

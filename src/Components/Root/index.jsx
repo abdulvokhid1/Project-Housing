@@ -6,7 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Myhome from "../Myhome";
 import Homepage from "../Homepage";
-import { navbar } from "../../Utils/mock";
+import { dashbar, navbar } from "../../Utils/mock";
+import Dashboard from "../Dashboard";
+import Myprofile from "../Myprofile";
 
 export const Root = () => {
   return (
@@ -21,6 +23,14 @@ export const Root = () => {
             })}
           </Route>
         </Routes>
+        {/* <Routes>
+          <Route element={<Myprofile />}>
+            <Route path="myprofile" element={<Dashboard />} />
+            {dashbar.map((value) => {
+              return <Route exact path={value?.path} element={value.element} />;
+            })}
+          </Route>
+        </Routes> */}
         {/* <Homepage /> */}
       </Container>
     </Router>
