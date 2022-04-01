@@ -12,12 +12,11 @@ const BigContainer = styled.div`
   display: flex;
 `;
 const Container = styled.div`
-  background: grey;
+  background: #ffffff;
+  width: 260px;
+
   border: 1px solid #e6e9ec;
   box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
-  /* margin-top: 230px; */
-  width: 230px;
-  /* height: 100%; */
 `;
 const Mapwrapper = styled.h1`
   font-family: "Cerebri Sans";
