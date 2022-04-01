@@ -4,7 +4,7 @@ import Rent from "../Components/Rent";
 // import myprofile, { Myprofile } from "../Components/myprofile";
 import Myhome from "../Components/Myhome";
 import SignIn from "../Components/SingIn";
-import Dashboard from "../Components/Dashboard";
+import { Dashboard } from "../Components/Dashboard";
 import home from "../Components/Assets/icons/home.png";
 import Homepage from "../Components/Homepage";
 // import Myhome from "../Components/Myhome";
@@ -54,8 +54,8 @@ export const navbar = [
   {
     id: 5,
     title: "MyProfile",
-    path: "/myprofile",
-    element: <Myprofile />,
+    path: "/dashboard",
+    element: <Dashboard />,
     icon: "",
     child: [],
   },
@@ -74,7 +74,7 @@ export const dashbar = [
     id: 1,
     title: "Dashboard",
     path: "/dashboard",
-    element: <Myprofile />,
+    element: <Dashboard />,
     icon: "",
     child: [],
   },

@@ -90,7 +90,7 @@ export const Signin = () => {
         console.log(res);
         localStorage.setItem("token", res?.data);
         if (res?.success && res?.data) {
-          navigate("/myprofile");
+          navigate(-1);
         }
       });
   };

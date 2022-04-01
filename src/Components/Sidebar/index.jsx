@@ -1,5 +1,11 @@
 import React from "react";
-import { AllWrapper, BigContainer, Container, Mapwrapper } from "./style";
+import {
+  AllWrapper,
+  BigContainer,
+  Container,
+  Mapwrapper,
+  SideWrapper,
+} from "./style";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { dashbar } from "../../Utils/mock";
 

@@ -25,12 +25,15 @@ export const Root = () => {
             })}
           </Route>
 
-          <Route element={<Sidebar />}>
-            {/* <Route element={<Navbar />} /> */}
-            {/* <Route element={<Dashboard />} /> */}
-            {dashbar.map((value) => {
-              return <Route exact path={value?.path} element={value.element} />;
-            })}
+          <Route element={<Navbar />}>
+            <Route element={<Sidebar />}>
+              {/* <Route element={<Dashboard />} /> */}
+              {dashbar.map((value) => {
+                return (
+                  <Route exact path={value?.path} element={value.element} />
+                );
+              })}
+            </Route>
           </Route>
         </Routes>
 
