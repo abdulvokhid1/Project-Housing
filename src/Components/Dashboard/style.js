@@ -1,12 +1,5 @@
 import styled from "styled-components";
-const AllWrapper = styled.div`
-  width: 100%;
-  height: 1300px;
-  display: flex;
-`;
-const BigContainer = styled.div`
-  display: flex;
-`;
+
 const Container = styled.div`
   width: 300px;
   background: #ffffff;
@@ -28,4 +21,4 @@ const Mapwrapper = styled.h1`
   margin: 0 10px;
 `;
 
-export { AllWrapper, Mapwrapper, Wrapper, Container, BigContainer };
+export { Mapwrapper, Wrapper, Container };

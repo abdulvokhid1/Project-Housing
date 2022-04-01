@@ -28,12 +28,13 @@ import { proporty } from "../../Utils/mock";
 import tablecut from "../Assets/images/tablecut.png";
 import { recentcode } from "../../Utils/mock";
 import Navbar from "../Navbar";
+import Sidebar from "../Sidebar";
 export const Myprofile = () => {
   return (
     <BigWrapper>
       {/* <Navbar /> */}
       <Container>
-        <Dashboard />
+        <Sidebar />
         <Wrapper>
           <Wordone>
             <Darrel>Howdy,Darrell!</Darrel>

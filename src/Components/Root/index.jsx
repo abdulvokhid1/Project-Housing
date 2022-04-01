@@ -10,6 +10,7 @@ import { dashbar, navbar } from "../../Utils/mock";
 import Dashboard from "../Dashboard";
 import Myprofile from "../Myprofile";
 import Profile from "../Profile";
+import Sidebar from "../Sidebar";
 
 export const Root = () => {
   return (
@@ -24,8 +25,8 @@ export const Root = () => {
             })}
           </Route>
 
-          {/* <Route element={<Navbar />} /> */}
-          <Route element={<Dashboard />}>
+          <Route element={<Sidebar />}>
+            {/* <Route element={<Navbar />} /> */}
             {/* <Route element={<Dashboard />} /> */}
             {dashbar.map((value) => {
               return <Route exact path={value?.path} element={value.element} />;
