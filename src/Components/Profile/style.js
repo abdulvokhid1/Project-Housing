@@ -14,7 +14,7 @@ const Wrapper = styled.div``;
 const Word_Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 200px;
   height: 130px;
   margin-left: 50px;
@@ -76,17 +76,18 @@ const Input_Wrapper = styled.div`
 const Name_Input = styled.input`
   border: none;
   border-bottom: 1px solid #e6e9ec;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 const Email_Input = styled.input`
   border: none;
   border-bottom: 1px solid #e6e9ec;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 const Mob_Input = styled.input`
   border: none;
+  /* border: hidden; */
   border-bottom: 1px solid #e6e9ec;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 const Email_Wrapper = styled.div`
   display: flex;
@@ -97,17 +98,17 @@ const Email_Wrapper = styled.div`
 const Last_Input = styled.input`
   border: none;
   border-bottom: 1px solid #e6e9ec;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 const Phone_Input = styled.input`
   border: none;
   border-bottom: 1px solid #e6e9ec;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 const Skype_Input = styled.input`
   border: none;
   border-bottom: 1px solid #e6e9ec;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 const Social = styled.p`
   font-family: "Cerebri Sans";
