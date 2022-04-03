@@ -30,7 +30,24 @@ import {
   Witter,
   Insta,
   Webone,
+  Aboutme,
+  Bottom,
+  Update,
+  PhotoWord,
+  Photo_Wrapper,
+  Photo_Page,
+  Upload,
+  Saved,
+  Prof,
+  Minimum,
+  Changing,
+  Making,
+  Form,
+  New_one,
+  Confirm,
+  Change_Button,
 } from "./style";
+import photo from "../Assets/images/photo.png";
 
 export const Profile = () => {
   return (
@@ -68,10 +85,31 @@ export const Profile = () => {
                 <Webone placeholder="Website Url (without http)" type="text" />
               </Twitter>
             </Second_Container>
+            <Aboutme>About me</Aboutme>
+            <Bottom />
+            <Update>Update Profile</Update>
           </Contact_Table>
-          <Photo_Table>Hi there</Photo_Table>
+          <Photo_Table>
+            <PhotoWord>Photo</PhotoWord>
+            <Photo_Wrapper>
+              <Photo_Page src={photo} />
+              <Upload>
+                <Saved />
+                <Prof>UPLOAD PROFILE PHOTO</Prof>
+              </Upload>
+            </Photo_Wrapper>
+            <Minimum>*minimum 500px x 500px</Minimum>
+          </Photo_Table>
         </Table_Wrapper>
-        <Change_Wrapper></Change_Wrapper>
+        <Change_Wrapper>
+          <Changing>Changing Password</Changing>
+          <Making type="password" placeholder="Old Password" />
+          <Form>
+            <New_one type="password" placeholder="New Password" />
+            <Confirm type="password" placeholder="Confirm New Password" />
+          </Form>
+          <Change_Button>CHANGE PASSWORD</Change_Button>
+        </Change_Wrapper>
         <Last_Word>
           Copyright © 2021 CreativeLayers. All Right Reserved.
         </Last_Word>
