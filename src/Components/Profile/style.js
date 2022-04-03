@@ -110,6 +110,9 @@ const Skype_Input = styled.input`
   border-bottom: 1px solid #e6e9ec;
   margin-top: 25px;
 `;
+const Second_Container = styled.div`
+  display: flex;
+`;
 const Social = styled.p`
   font-family: "Cerebri Sans";
   font-style: normal;
@@ -117,9 +120,7 @@ const Social = styled.p`
   font-size: 16px;
   line-height: 20px;
   color: #0d263b;
-`;
-const Second_Container = styled.div`
-  display: flex;
+  margin-left: 30px;
 `;
 const Media_Input = styled.div`
   display: flex;
@@ -128,11 +129,41 @@ const Media_Input = styled.div`
   height: 170px;
   margin-left: 30px;
 `;
+const Face = styled.input`
+  border: none;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 25px;
+`;
+const Linked = styled.input`
+  border: none;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 25px;
+`;
+const Pinterest = styled.input`
+  border: none;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 25px;
+`;
 const Twitter = styled.div`
   display: flex;
   flex-direction: column;
   width: 360px;
   margin-left: 30px;
+`;
+const Witter = styled.input`
+  border: none;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 25px;
+`;
+const Insta = styled.input`
+  border: none;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 25px;
+`;
+const Webone = styled.input`
+  border: none;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 25px;
 `;
 const Contact = styled.p`
   font-family: "Cerebri Sans";
@@ -141,6 +172,7 @@ const Contact = styled.p`
   font-size: 16px;
   line-height: 20px;
   color: #0d263b;
+  margin-left: 30px;
 `;
 
 const Photo_Table = styled.div`
@@ -167,6 +199,12 @@ const Last_Word = styled.p`
   margin-top: 62px;
 `;
 export {
+  Face,
+  Linked,
+  Pinterest,
+  Witter,
+  Insta,
+  Webone,
   Twitter,
   Media_Input,
   Last_Input,

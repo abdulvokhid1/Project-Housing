@@ -24,6 +24,12 @@ import {
   Skype_Input,
   Media_Input,
   Twitter,
+  Face,
+  Linked,
+  Pinterest,
+  Witter,
+  Insta,
+  Webone,
 } from "./style";
 
 export const Profile = () => {
@@ -52,14 +58,14 @@ export const Profile = () => {
             <Social>Social Media</Social>
             <Second_Container>
               <Media_Input>
-                <input placeholder="Facebook Url" type="text" />
-                <input placeholder="Linkedin Url" type="text" />
-                <input placeholder="Pinterest Url" type="text" />
+                <Face placeholder="Facebook Url" type="text" />
+                <Linked placeholder="Linkedin Url" type="text" />
+                <Pinterest placeholder="Pinterest Url" type="text" />
               </Media_Input>
               <Twitter>
-                <input placeholder="Twitter Url" type="text" />
-                <input placeholder="Instagram Url" type="text" />
-                <input placeholder="Website Url (without http)" type="text" />
+                <Witter placeholder="Twitter Url" type="text" />
+                <Insta placeholder="Instagram Url" type="text" />
+                <Webone placeholder="Website Url (without http)" type="text" />
               </Twitter>
             </Second_Container>
           </Contact_Table>
