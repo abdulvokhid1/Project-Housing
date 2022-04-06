@@ -65,6 +65,13 @@ import {
   Secondone,
   Testwo,
   Uploading,
+  Video,
+  Video_Input,
+  Tour,
+  Tour_Input,
+  Amenity_Div,
+  Just_Word,
+  Select,
 } from "./style";
 import landing from "../Assets/images/landing.png";
 import house from "../Assets/images/house.png";
@@ -153,7 +160,15 @@ export const Addproperty = () => {
           <Testwo>test_property.pdf</Testwo>
         </Pdf_Div>
         <Uploading>UPLOAD FILES</Uploading>
+        <Video_Input type="text" placeholder="Video Link" />
+        <Tour>Virtual Tour</Tour>
+        <Tour_Input />
       </Media_Div>
+      <Amenity_Div>
+        <Just_Word>Amenities</Just_Word>
+        <Select>Select/Deselect All</Select>
+        <input type="checkbox" placeholder="mmm" />
+      </Amenity_Div>
     </Container>
   );
 };

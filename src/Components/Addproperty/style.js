@@ -4,7 +4,7 @@ import { ReactComponent as pdf } from "../Assets/icons/pdf.svg";
 const Container = styled.div`
   width: 100%;
   border: 1px solid black;
-  height: 2930px;
+  height: 3930px;
   background: #e5e5e5;
   display: flex;
   flex-direction: column;
@@ -503,7 +503,76 @@ const Uploading = styled.button`
   height: 45px;
   margin-top: 20px;
 `;
+const Video_Input = styled.input`
+  border: none;
+  outline: none;
+  width: 1090px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 30px;
+  margin-left: 30px;
+`;
+const Tour = styled.p`
+  margin-left: 30px;
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #696969;
+  margin-top: 20px;
+`;
+const Tour_Input = styled.input`
+  border: none;
+  outline: none;
+  width: 1090px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-top: 40px;
+`;
+const Amenity_Div = styled.div`
+  margin-left: 50px;
+  height: 300px;
+  width: 1160px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #e6e9ec;
+  box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+`;
+const Just_Word = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 30px;
+  color: #0d263b;
+`;
+const Select = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #0061df;
+  margin-left: 30px;
+`;
 export {
+  Select,
+  Just_Word,
+  Amenity_Div,
+  Tour_Input,
+  Tour,
+  Video_Input,
   Uploading,
   Pdf_Div,
   Firstone,
