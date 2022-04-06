@@ -1,9 +1,10 @@
 import styled from "styled-components";
-
+import { ReactComponent as bigmap } from "../Assets/images/bigmap.svg";
+import { ReactComponent as pdf } from "../Assets/icons/pdf.svg";
 const Container = styled.div`
   width: 100%;
   border: 1px solid black;
-  height: 1930px;
+  height: 2930px;
   background: #e5e5e5;
   display: flex;
   flex-direction: column;
@@ -300,7 +301,7 @@ const Fourth_Input = styled.input`
 `;
 const Location_Div = styled.div`
   margin-left: 50px;
-  height: 600px;
+  height: 670px;
   width: 1160px;
   margin-top: 30px;
   background: #ffffff;
@@ -316,14 +317,218 @@ const Word_Loc = styled.p`
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-
-  /* Color / 2 */
-
   color: #0d263b;
   margin-left: 30px;
 `;
+const Region = styled.div`
+  display: flex;
+  margin-left: 30px;
+`;
+const Input_one = styled.input`
+  border: none;
+  outline: none;
+  width: 525px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+`;
+const Input_two = styled.input`
+  border: none;
+  outline: none;
+  width: 525px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+`;
+const Map_Input = styled.input`
+  border: none;
+  outline: none;
+  width: 1090px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+  margin-top: 30px;
+  margin-left: 30px;
+`;
+const MapCard = styled(bigmap)`
+  width: 1095px;
+  height: 400px;
+  margin-left: 30px;
+  margin-top: 30px;
+`;
+const LastLine = styled.div`
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+`;
+const Line_One = styled.input`
+  border: none;
+  outline: none;
+  width: 525px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+`;
+const Line_Two = styled.input`
+  border: none;
+  outline: none;
+  width: 525px;
+  margin-top: 20px;
+  margin-right: 35px;
+  border-bottom: 1px solid #e6e9ec;
+`;
+const Media_Div = styled.div`
+  margin-left: 50px;
+  height: 730px;
+  width: 1160px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #e6e9ec;
+  box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+`;
+const Media = styled.p`
+  margin-left: 30px;
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0d263b;
+`;
+const Feature = styled.p`
+  margin-left: 30px;
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0d263b;
+`;
+const ImageMap = styled.div`
+  display: flex;
+  margin-left: 30px;
+`;
+const ImgOne = styled.img`
+  width: 130px;
+  height: 100px;
+`;
+const ImgTwo = styled.img`
+  width: 130px;
+  height: 100px;
+  margin-left: 20px;
+`;
+const ImgThree = styled.img`
+  width: 130px;
+  height: 100px;
+  margin-left: 20px;
+`;
+const File = styled.button`
+  margin-left: 30px;
+  background: #ffffff;
+  color: #0061df;
+  border: 1px solid #0061df;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 130px;
+  height: 45px;
+  margin-top: 30px;
+`;
+const Galery = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 30px;
+  color: #0d263b;
+  margin-top: 30px;
+`;
+const NextFile = styled.button`
+  margin-left: 30px;
+  background: #ffffff;
+  color: #0061df;
+  border: 1px solid #0061df;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 130px;
+  height: 45px;
+`;
+const Attachment = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 30px;
+  color: #0d263b;
+  margin-top: 30px;
+`;
+const Pdf_Div = styled.div`
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+`;
+const Firstone = styled(pdf)``;
+const Testone = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 
+  color: #696969;
+`;
+const Testwo = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+const Secondone = styled(pdf)`
+  margin-left: 30px;
+`;
+const Uploading = styled.button`
+  margin-left: 30px;
+  background: #ffffff;
+  color: #0061df;
+  border: 1px solid #0061df;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 130px;
+  height: 45px;
+  margin-top: 20px;
+`;
 export {
+  Uploading,
+  Pdf_Div,
+  Firstone,
+  Secondone,
+  Testone,
+  Testwo,
+  Attachment,
+  Galery,
+  NextFile,
+  File,
+  ImgOne,
+  ImgThree,
+  ImgTwo,
+  Feature,
+  ImageMap,
+  Media,
+  Media_Div,
+  LastLine,
+  Line_One,
+  Line_Two,
+  MapCard,
+  Map_Input,
+  Input_one,
+  Input_two,
+  Region,
   Word_Loc,
   Location_Div,
   Third_Input,

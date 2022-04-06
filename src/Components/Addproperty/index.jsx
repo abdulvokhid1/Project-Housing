@@ -40,7 +40,34 @@ import {
   Fourth_Input,
   Location_Div,
   Word_Loc,
+  Input_one,
+  Input_two,
+  Region,
+  Map_Input,
+  MapCard,
+  LastLine,
+  Line_One,
+  Line_Two,
+  Media_Div,
+  Media,
+  Feature,
+  ImageMap,
+  ImgOne,
+  ImgTwo,
+  ImgThree,
+  File,
+  Galery,
+  NextFile,
+  Attachment,
+  Pdf_Div,
+  Firstone,
+  Testone,
+  Secondone,
+  Testwo,
+  Uploading,
 } from "./style";
+import landing from "../Assets/images/landing.png";
+import house from "../Assets/images/house.png";
 export const Addproperty = () => {
   return (
     <Container>
@@ -94,7 +121,39 @@ export const Addproperty = () => {
       </Price_Div>
       <Location_Div>
         <Word_Loc>Location</Word_Loc>
+        <Region>
+          <Input_one type="text" placeholder="Regions" />
+          <Input_two type="text" placeholder="Friendly Address" />
+        </Region>
+        <Map_Input type="text" placeholder="Map Location" />
+        <MapCard />
+        <LastLine>
+          <Line_One type="text" placeholder="Latitude" />
+          <Line_Two type="text" placeholder="Longitute" />
+        </LastLine>
       </Location_Div>
+      <Media_Div>
+        <Media>Media</Media>
+        <Feature>Featured Image</Feature>
+        <ImageMap>
+          <ImgOne src={landing} />
+          <ImgTwo src={house} />
+          <ImgThree src={landing} />
+        </ImageMap>
+        <File>UPLOAD FILES</File>
+        <div>
+          <Galery>Galery</Galery>
+          <NextFile>UPLOAD FILES</NextFile>
+        </div>
+        <Attachment>Attachment</Attachment>
+        <Pdf_Div>
+          <Firstone />
+          <Testone>test_property.pdf</Testone>
+          <Secondone />
+          <Testwo>test_property.pdf</Testwo>
+        </Pdf_Div>
+        <Uploading>UPLOAD FILES</Uploading>
+      </Media_Div>
     </Container>
   );
 };
