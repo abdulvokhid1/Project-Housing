@@ -18,7 +18,7 @@ const Search = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 5px 0 225px;
+  /* padding: 22px 5px 0 225px; */
   background-color: #7a8691;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(${landing});
@@ -33,7 +33,7 @@ const Centerdiv = styled.div`
   justify-content: center;
   /* background: red; */
   position: relative;
-  left: 170px;
+  left: 410px;
 `;
 const Middle = styled.p`
   font-family: "Cerebri Sans";
