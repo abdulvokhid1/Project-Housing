@@ -33,8 +33,9 @@ export const Navbar = () => {
                   style={({ isActive }) => {
                     return {
                       color: isActive ? "red" : "black",
-                      textDecoration: isActive ? "underline" : "none",
+                      // textDecoration: isActive ? "underline" : "none",
                       fontSize: isActive ? "20px" : "15px",
+                      borderBottom: isActive ? "3px solid red" : "none",
                     };
                   }}
                   className={"navlink"}
