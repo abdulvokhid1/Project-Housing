@@ -2,14 +2,14 @@ import styled from "styled-components";
 const BigWrapper = styled.div`
   width: 100%;
   height: 800px;
-  background: #e5e5e5;
+  background: #f9f8f8;
   display: flex;
   /* flex-direction: column; */
 `;
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  background: #e5e5e5;
+  background: #f9f8f8;
   display: flex;
   /* flex-direction: column; */
   /* border: 1px solid black; */

@@ -4,7 +4,7 @@ const Container = styled.div`
   width: 100%;
   /* border: 1px solid black; */
   height: 930px;
-  background: #e5e5e5;
+  background: #f9f8f8;
 `;
 
 const Prop = styled.div`

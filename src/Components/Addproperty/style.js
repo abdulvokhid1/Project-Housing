@@ -3,9 +3,8 @@ import { ReactComponent as bigmap } from "../Assets/images/bigmap.svg";
 import { ReactComponent as pdf } from "../Assets/icons/pdf.svg";
 const Container = styled.div`
   width: 100%;
-  border: 1px solid black;
   height: 3930px;
-  background: #e5e5e5;
+  background: #f9f8f8;
   display: flex;
   flex-direction: column;
 `;
@@ -564,7 +563,6 @@ const Select = styled.p`
   line-height: 18px;
   text-decoration-line: underline;
   color: #0061df;
-  margin-left: 30px;
 `;
 export {
   Select,
