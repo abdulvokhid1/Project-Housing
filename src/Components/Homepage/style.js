@@ -142,8 +142,30 @@ const Searchenter = styled.p`
   line-height: 18px;
   color: #696969;
 `;
+const Discover = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-align: center;
+  color: #0d263b;
+`;
+const Smallone = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+  text-align: center;
+`;
 
 export {
+  Discover,
+  Smallone,
   Property,
   Propertytype,
   Searchtype,

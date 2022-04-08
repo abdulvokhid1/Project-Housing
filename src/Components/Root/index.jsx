@@ -21,7 +21,14 @@ export const Root = () => {
           <Route element={<Navbar />}>
             <Route path="/" element={<Homepage />} />
             {navbar.map((value) => {
-              return <Route exact path={value?.path} element={value.element} />;
+              return (
+                <Route
+                  key={value.id}
+                  exact
+                  path={value?.path}
+                  element={value.element}
+                />
+              );
             })}
           </Route>
 
@@ -30,7 +37,12 @@ export const Root = () => {
               {/* <Route element={<Dashboard />} /> */}
               {dashbar.map((value) => {
                 return (
-                  <Route exact path={value?.path} element={value.element} />
+                  <Route
+                    key={value.id}
+                    exact
+                    path={value?.path}
+                    element={value.element}
+                  />
                 );
               })}
             </Route>
