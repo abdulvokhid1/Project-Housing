@@ -11,10 +11,18 @@ const Container = styled.div`
 
 const Mapping = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   border: 1px solid black;
   width: 100%;
   height: 600px;
+`;
+const Good = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const Well = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const Search = styled.div`
@@ -172,6 +180,8 @@ const Smallone = styled.p`
 `;
 
 export {
+  Well,
+  Good,
   Mapping,
   Discover,
   Smallone,

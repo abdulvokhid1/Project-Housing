@@ -22,20 +22,23 @@ import {
   Discover,
   Smallone,
   Mapping,
+  Good,
+  Well,
 } from "./style";
 
 const { REACT_APP_BASE_URL: url } = process.env;
 export const Homepage = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
+  const [arr, setArr] = useState([]);
 
-  useEffect(() => {
-    fetch(`${url}/v1/houses`, {
+  useEffect(async () => {
+    await fetch(`${url}/v1/houses`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     })
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((res) => setData(res.dataList[0]));
     // localStorage.setItem("token", res?.data);
   }, []);
   return (
@@ -78,11 +81,15 @@ export const Homepage = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.{" "}
       </Smallone>
       <Mapping>
-        {/* <>
+        <Good>
           {data.map((value) => {
-            return <p key={value.id}>{value.id}</p>;
+            return (
+              <h1 key={value.id}>
+                {value.id}-{value.name}:{value.description}:{value.room},
+              </h1>
+            );
           })}
-        </> */}
+        </Good>
       </Mapping>
     </Container>
   );
