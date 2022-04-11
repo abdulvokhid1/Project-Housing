@@ -85,7 +85,7 @@ export const Homepage = () => {
           {data.map((value) => {
             return (
               <h1 key={value.id}>
-                {value.id}-{value.name}:{value.description}:{value.room},
+                {value.id}-{value.name}-
               </h1>
             );
           })}

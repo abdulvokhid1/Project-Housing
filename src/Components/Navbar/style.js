@@ -16,6 +16,7 @@ const Container = styled.div`
   box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
   align-items: center;
   justify-content: space-between;
+  position: sticky;
 `;
 const Iconhouzing = styled.div`
   display: flex;
