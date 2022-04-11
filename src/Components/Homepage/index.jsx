@@ -26,7 +26,7 @@ import {
 
 const { REACT_APP_BASE_URL: url } = process.env;
 export const Homepage = () => {
-  const [data, setData] = useState([[]]);
+  const [data, setData] = useState({});
 
   useEffect(() => {
     fetch(`${url}/v1/houses`, {
@@ -78,11 +78,11 @@ export const Homepage = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.{" "}
       </Smallone>
       <Mapping>
-        <>
+        {/* <>
           {data.map((value) => {
             return <p key={value.id}>{value.id}</p>;
           })}
-        </>
+        </> */}
       </Mapping>
     </Container>
   );
