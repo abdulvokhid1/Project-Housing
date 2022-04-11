@@ -9,6 +9,14 @@ const Container = styled.div`
   position: absolute;
 `;
 
+const Mapping = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  height: 600px;
+`;
+
 const Search = styled.div`
   width: 100%;
   height: 700px;
@@ -164,6 +172,7 @@ const Smallone = styled.p`
 `;
 
 export {
+  Mapping,
   Discover,
   Smallone,
   Property,

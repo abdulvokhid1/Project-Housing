@@ -21,11 +21,12 @@ import {
   Property,
   Discover,
   Smallone,
+  Mapping,
 } from "./style";
 
 const { REACT_APP_BASE_URL: url } = process.env;
 export const Homepage = () => {
-  const [state, setState] = useState(null);
+  const [data, setData] = useState([[]]);
 
   useEffect(() => {
     fetch(`${url}/v1/houses`, {
@@ -34,11 +35,8 @@ export const Homepage = () => {
       },
     })
       .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        localStorage.setItem("token", res?.data);
-      })
-      .then((state) => setState(state));
+      .then((data) => setData(data));
+    // localStorage.setItem("token", res?.data);
   }, []);
   return (
     <Container>
@@ -79,12 +77,13 @@ export const Homepage = () => {
       <Smallone>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.{" "}
       </Smallone>
-
-      {/* <div>
-        {data.map((item) => {
-          return <p key={item.id}>{item.title}</p>;
-        })}
-      </div> */}
+      <Mapping>
+        <>
+          {data.map((value) => {
+            return <p key={value.id}>{value.id}</p>;
+          })}
+        </>
+      </Mapping>
     </Container>
   );
 };
