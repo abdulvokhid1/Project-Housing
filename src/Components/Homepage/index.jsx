@@ -61,6 +61,10 @@ import {
   Arrayitem,
   Heart,
   Plus,
+  Choose_Wrapper,
+  Word_Wrapper,
+  Choose_Word,
+  Choose_Small,
 } from "./style";
 
 const { REACT_APP_BASE_URL: url } = process.env;
@@ -162,7 +166,7 @@ export const Homepage = () => {
                         </Garage_Number>
                       </Garage>
                       <Yard>
-                        <Yard_Icon src={yard} />
+                        <Yard_Icon />
                         <Yard_Number>{item?.houseDetails?.area}</Yard_Number>
                       </Yard>
                     </Tables>
@@ -184,6 +188,12 @@ export const Homepage = () => {
           )}
         </Good>
       </Mapping>
+      <Choose_Wrapper>
+        <Word_Wrapper>
+          <Choose_Word>Why Choose Us</Choose_Word>
+          <Choose_Small>We provide full service at full step</Choose_Small>
+        </Word_Wrapper>
+      </Choose_Wrapper>
     </Container>
   );
 };

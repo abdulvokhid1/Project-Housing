@@ -3,9 +3,10 @@ import landing from "../Assets/images/landing.png";
 import { ReactComponent as heart2 } from "../Assets/icons/heart2.svg";
 import { ReactComponent as plus } from "../Assets/icons/plus.svg";
 import { ReactComponent as ruler } from "../Assets/icons/ruler.svg";
+import { ReactComponent as resize } from "../Assets/icons/resize.svg";
 const Container = styled.div`
   width: 100%;
-  height: 1500px;
+  height: 2500px;
   position: absolute;
   position: sticky;
   position: absolute;
@@ -14,14 +15,15 @@ const Container = styled.div`
 const Mapping = styled.div`
   display: flex;
   /* flex-direction: column; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   height: 600px;
 `;
 const Good = styled.div`
   display: flex;
   justify-content: space-between;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  height: 450px;
   width: 100%;
   margin-right: 100px;
   margin-left: 100px;
@@ -185,12 +187,18 @@ const Smallone = styled.p`
   text-align: center;
 `;
 const Carding = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 300px;
   height: 400px;
+  background: #ffffff;
+  /* Border / Color */
+
+  border: 1px solid #e6e9ec;
+  box-sizing: border-box;
+  border-radius: 3px;
 `;
 const Card_Img = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 180px;
   width: 300px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -223,7 +231,7 @@ const Circle = styled.img`
   margin-left: 260px;
 `;
 const Card_City = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 300px;
   height: 200px;
   margin-top: 15px;
@@ -311,14 +319,11 @@ const Garage_Number = styled.p`
   color: #696969;
 `;
 const Yard = styled.div`
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
 `;
-const Yard_Icon = styled.img`
-  width: 20px;
-  height: 20px;
-`;
+const Yard_Icon = styled(ruler)``;
 const Yard_Number = styled.p`
   font-family: "Cerebri Sans";
   font-style: normal;
@@ -347,6 +352,7 @@ const Prices = styled.div`
 `;
 const Items = styled.div`
   display: flex;
+  align-items: center;
 `;
 const Old_Price = styled.p`
   font-family: "Cerebri Sans";
@@ -365,13 +371,50 @@ const New_Price = styled.p`
   font-size: 16px;
   line-height: 20px;
   margin-top: -13px;
-
-  /* Color / 2 */
 `;
-const Arrayitem = styled(ruler)``;
-const Plus = styled(plus)``;
-const Heart = styled(heart2)``;
+const Arrayitem = styled(resize)`
+  margin-right: 20px;
+`;
+const Plus = styled(plus)`
+  margin-right: 20px;
+`;
+const Heart = styled(heart2)`
+  margin-right: 20px;
+`;
+const Choose_Wrapper = styled.div`
+  background: #f6f8f9;
+  width: 100%;
+  height: 400px;
+  margin-top: -40px;
+`;
+const Word_Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const Choose_Word = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #0d263b;
+`;
+const Choose_Small = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+  margin-top: -30px;
+`;
 export {
+  Choose_Word,
+  Choose_Small,
+  Word_Wrapper,
+  Choose_Wrapper,
   Arrayitem,
   Plus,
   Heart,
