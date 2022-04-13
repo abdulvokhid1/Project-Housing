@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import landing from "../Assets/images/landing.jpg";
+import landing from "../Assets/images/landing.png";
 
 const Container = styled.div`
   width: 100%;
@@ -18,7 +18,11 @@ const Mapping = styled.div`
 `;
 const Good = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid blue;
+  width: 100%;
+  margin-right: 100px;
+  margin-left: 100px;
 `;
 const Well = styled.div`
   display: flex;
@@ -178,8 +182,75 @@ const Smallone = styled.p`
   color: #696969;
   text-align: center;
 `;
-
+const Carding = styled.div`
+  border: 1px solid red;
+  width: 300px;
+  height: 400px;
+`;
+const Card_Img = styled.div`
+  border: 1px solid black;
+  height: 180px;
+  width: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(${landing});
+`;
+const Featured = styled.button`
+  background: #0061df;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+`;
+const Sale = styled.button`
+  background: #0d263b;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 30px;
+  margin-left: 120px;
+`;
+const Circle = styled.img`
+  border-radius: 18px;
+  width: 30px;
+  height: 30px;
+  margin-top: 125px;
+  margin-left: 260px;
+`;
+const Card_City = styled.div`
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+  margin-top: 15px;
+`;
+const Address = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+const Describe = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0d263b;
+`;
 export {
+  Describe,
+  Address,
+  Card_City,
+  Circle,
+  Featured,
+  Sale,
+  Card_Img,
+  Carding,
   Well,
   Good,
   Mapping,
