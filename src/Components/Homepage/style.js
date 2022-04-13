@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import landing from "../Assets/images/landing.png";
-
+import { ReactComponent as heart2 } from "../Assets/icons/heart2.svg";
+import { ReactComponent as plus } from "../Assets/icons/plus.svg";
+import { ReactComponent as ruler } from "../Assets/icons/ruler.svg";
 const Container = styled.div`
   width: 100%;
   height: 1500px;
@@ -225,14 +227,22 @@ const Card_City = styled.div`
   width: 300px;
   height: 200px;
   margin-top: 15px;
+  align-items: center;
 `;
 const Address = styled.p`
-  font-family: "Cerebri Sans";
+  /* font-family: "Cerebri Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #696969;
+  color: #696969; */
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0d263b;
+  margin-left: 20px;
 `;
 const Describe = styled.p`
   font-family: "Cerebri Sans";
@@ -242,7 +252,150 @@ const Describe = styled.p`
   line-height: 20px;
   color: #0d263b;
 `;
+const Tables = styled.div`
+  display: flex;
+  height: 50px;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  text-align: center;
+`;
+const Beds = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const Bed_Icon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+const Bed_Number = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+const Bath = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const Bath_Icon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+const Bath_Number = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+const Garage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const Garage_Icon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+const Garage_Number = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+const Yard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const Yard_Icon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+const Yard_Number = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #696969;
+`;
+const Border = styled.div`
+  border-bottom: 2px solid #e6e9ec;
+  margin-top: 20px;
+`;
+const Loading = styled.div``;
+const Center = styled.h1`
+  text-align: center;
+`;
+const Price_Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const Prices = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+`;
+const Items = styled.div`
+  display: flex;
+`;
+const Old_Price = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: line-through;
+  text-decoration: line-through;
+  color: #696969;
+`;
+const New_Price = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: -13px;
+
+  /* Color / 2 */
+`;
+const Arrayitem = styled(ruler)``;
+const Plus = styled(plus)``;
+const Heart = styled(heart2)``;
 export {
+  Arrayitem,
+  Plus,
+  Heart,
+  Old_Price,
+  New_Price,
+  Price_Wrapper,
+  Prices,
+  Items,
+  Border,
+  Center,
+  Loading,
+  Bath,
+  Bath_Icon,
+  Bath_Number,
+  Garage,
+  Garage_Icon,
+  Garage_Number,
+  Yard,
+  Yard_Icon,
+  Yard_Number,
+  Bed_Icon,
+  Bed_Number,
+  Beds,
+  Tables,
   Describe,
   Address,
   Card_City,

@@ -3,6 +3,10 @@ import { buymap } from "../../mock";
 import { NavLink } from "react-router-dom";
 import landing from "../Assets/images/landing.png";
 import circle from "../Assets/images/circle.png";
+import bed from "../Assets/icons/bed.png";
+import bath from "../Assets/icons/bath.png";
+import garage from "../Assets/icons/garage.png";
+import yard from "../Assets/icons/yard.png";
 import {
   Button,
   Buy,
@@ -33,6 +37,30 @@ import {
   Card_City,
   Address,
   Describe,
+  Tables,
+  Beds,
+  Bed_Icon,
+  Bed_Number,
+  Bath,
+  Bath_Icon,
+  Bath_Number,
+  Garage,
+  Garage_Icon,
+  Garage_Number,
+  Yard,
+  Yard_Icon,
+  Yard_Number,
+  Loading,
+  Center,
+  Border,
+  Prices,
+  Items,
+  Price_Wrapper,
+  Old_Price,
+  New_Price,
+  Arrayitem,
+  Heart,
+  Plus,
 } from "./style";
 
 const { REACT_APP_BASE_URL: url } = process.env;
@@ -90,6 +118,16 @@ export const Homepage = () => {
       <Smallone>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.{" "}
       </Smallone>
+      <Loading>
+        {!localStorage.getItem("token") && (
+          <>
+            <Center>Loading...</Center>
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+          </>
+        )}
+      </Loading>
       <Mapping>
         <Good>
           {data.map(
@@ -102,10 +140,44 @@ export const Homepage = () => {
                     <Circle src={circle} />
                   </Card_Img>
                   <Card_City>
-                    <Describe>{item?.description}</Describe>
+                    {/* <Describe>{item?.category?.name}</Describe> */}
                     <Address>
                       {item?.city},{item?.country}
                     </Address>
+                    <Tables>
+                      <Beds>
+                        <Bed_Icon src={bed} />
+                        <Bed_Number>{item?.houseDetails?.bed} beds</Bed_Number>
+                      </Beds>
+                      <Bath>
+                        <Bath_Icon src={bath} />
+                        <Bath_Number>
+                          {item?.houseDetails?.bath} baths
+                        </Bath_Number>
+                      </Bath>
+                      <Garage>
+                        <Garage_Icon src={garage} />
+                        <Garage_Number>
+                          {item?.houseDetails?.garage} garages
+                        </Garage_Number>
+                      </Garage>
+                      <Yard>
+                        <Yard_Icon src={yard} />
+                        <Yard_Number>{item?.houseDetails?.area}</Yard_Number>
+                      </Yard>
+                    </Tables>
+                    <Border></Border>
+                    <Price_Wrapper>
+                      <Prices>
+                        <Old_Price>$ {item?.price}/mo</Old_Price>
+                        <New_Price>$ {item?.salePrice}/mo</New_Price>
+                      </Prices>
+                      <Items>
+                        <Arrayitem />
+                        <Plus />
+                        <Heart />
+                      </Items>
+                    </Price_Wrapper>
                   </Card_City>
                 </Carding>
               )
