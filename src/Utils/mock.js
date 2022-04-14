@@ -18,6 +18,8 @@ import SavedSearches from "../Components/SavedSearches";
 import Invoices from "../Components/Invoices";
 import Inbox from "../Components/Inbox";
 import Loggingout from "../Components/Loggingout";
+import { ReactComponent as inbox } from "../Components/Assets/icons/inbox.svg";
+
 export const navbar = [
   {
     id: 1,
@@ -206,5 +208,32 @@ export const recentcode = [
     id: 7,
     icon: [],
     title: "Your listing Luxury Family Home has been approved!.",
+  },
+];
+
+export const choosing = [
+  {
+    id: 1,
+    icon: { inbox },
+    title: "Trusted By Thousands",
+    text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
+  },
+  {
+    id: 2,
+    icon: "",
+    title: "Wide Range Of Properties",
+    text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
+  },
+  {
+    id: 3,
+    icon: "",
+    title: "Financing Made Easy",
+    text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
+  },
+  {
+    id: 4,
+    icon: "",
+    title: "See Neighborhoods",
+    text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
   },
 ];

@@ -27,6 +27,7 @@ const Good = styled.div`
   width: 100%;
   margin-right: 100px;
   margin-left: 100px;
+  margin-top: 50px;
 `;
 const Well = styled.div`
   display: flex;
@@ -384,7 +385,7 @@ const Heart = styled(heart2)`
 const Choose_Wrapper = styled.div`
   background: #f6f8f9;
   width: 100%;
-  height: 400px;
+  height: 500px;
   margin-top: -40px;
 `;
 const Word_Wrapper = styled.div`
@@ -410,7 +411,20 @@ const Choose_Small = styled.p`
   color: #696969;
   margin-top: -30px;
 `;
+const Mapping_Wrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 1320px;
+  height: 300px;
+  margin-left: 100px;
+`;
+const Message = styled.img`
+  background: blue;
+`;
 export {
+  Message,
+  Mapping_Wrapper,
   Choose_Word,
   Choose_Small,
   Word_Wrapper,

@@ -65,8 +65,11 @@ import {
   Word_Wrapper,
   Choose_Word,
   Choose_Small,
+  Mapping_Wrapper,
+  Message,
 } from "./style";
-
+import { choosing } from "../../Utils/mock";
+import { Img } from "../Dashboard/style";
 const { REACT_APP_BASE_URL: url } = process.env;
 export const Homepage = () => {
   const [data, setData] = useState([]);
@@ -125,6 +128,7 @@ export const Homepage = () => {
       <Loading>
         {!localStorage.getItem("token") && (
           <>
+            <h1>Log in first in Sign in page!</h1>
             <Center>Loading...</Center>
             <div class="progress">
               <div class="indeterminate"></div>
@@ -136,7 +140,7 @@ export const Homepage = () => {
         <Good>
           {data.map(
             (item) =>
-              item.id <= 7 && (
+              item.id <= 9 && (
                 <Carding key={item.id}>
                   <Card_Img>
                     <Featured>FEATURED</Featured>
@@ -193,6 +197,16 @@ export const Homepage = () => {
           <Choose_Word>Why Choose Us</Choose_Word>
           <Choose_Small>We provide full service at full step</Choose_Small>
         </Word_Wrapper>
+        <Mapping_Wrapper>
+          {choosing.map((value) => {
+            return (
+              <>
+                <h1>{value.id}</h1>;
+                <Message src={value?.icon} />
+              </>
+            );
+          })}
+        </Mapping_Wrapper>
       </Choose_Wrapper>
     </Container>
   );
