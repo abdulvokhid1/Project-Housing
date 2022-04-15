@@ -413,6 +413,7 @@ const Choose_Small = styled.p`
 `;
 const Mapping_Wrapper = styled.div`
   display: flex;
+
   justify-content: space-around;
   border: 1px solid black;
   width: 1320px;
@@ -422,7 +423,13 @@ const Mapping_Wrapper = styled.div`
 const Message = styled.img`
   background: blue;
 `;
+const Border_Making = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+`;
 export {
+  Border_Making,
   Message,
   Mapping_Wrapper,
   Choose_Word,

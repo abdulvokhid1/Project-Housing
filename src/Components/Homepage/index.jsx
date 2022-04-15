@@ -67,6 +67,7 @@ import {
   Choose_Small,
   Mapping_Wrapper,
   Message,
+  Border_Making,
 } from "./style";
 import { choosing } from "../../Utils/mock";
 import { Img } from "../Dashboard/style";
@@ -200,11 +201,11 @@ export const Homepage = () => {
         <Mapping_Wrapper>
           {choosing.map((value) => {
             return (
-              <>
+              <Border_Making>
                 <h1>{value.id}</h1>;
                 <Message src={value?.icon} />
-                <h1>Hello World</h1>
-              </>
+                <h1>{value?.title}</h1>
+              </Border_Making>
             );
           })}
         </Mapping_Wrapper>
