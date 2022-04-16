@@ -68,6 +68,7 @@ import {
   Mapping_Wrapper,
   Message,
   Border_Making,
+  Wide,
 } from "./style";
 import { choosing } from "../../Utils/mock";
 import { Img } from "../Dashboard/style";
@@ -149,7 +150,7 @@ export const Homepage = () => {
                     <Circle src={circle} />
                   </Card_Img>
                   <Card_City>
-                    {/* <Describe>{item?.category?.name}</Describe> */}
+                    {/*  <Describe>{item?.category?.name}</Describe> */}
                     <Address>
                       {item?.city},{item?.country}
                     </Address>
@@ -204,7 +205,7 @@ export const Homepage = () => {
               <Border_Making>
                 <h1>{value.id}</h1>;
                 <Message src={value?.icon} />
-                <h1>{value?.title}</h1>
+                <Wide>{value?.title}</Wide>
               </Border_Making>
             );
           })}

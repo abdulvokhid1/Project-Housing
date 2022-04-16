@@ -430,7 +430,22 @@ const Border_Making = styled.div`
   width: 300px;
   height: 300px;
 `;
+const Wide = styled.h1`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Color / 2 */
+
+  color: #0d263b;
+`;
 export {
+  Wide,
   Border_Making,
   Message,
   Mapping_Wrapper,
