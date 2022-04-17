@@ -189,6 +189,7 @@ export const Homepage = () => {
                       </Items>
                     </Price_Wrapper>
                   </Card_City>
+                  <h1>Every card should be read</h1>
                 </Carding>
               )
           )}
