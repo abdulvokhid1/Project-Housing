@@ -79,9 +79,7 @@ export const Homepage = () => {
 
   useEffect(async () => {
     await fetch(`${url}/v1/houses`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
+      headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     })
       .then((res) => res.json())
       .then((res) => setData(res.dataList[0]));
