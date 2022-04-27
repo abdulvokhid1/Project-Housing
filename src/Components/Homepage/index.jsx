@@ -79,7 +79,7 @@ export const Homepage = () => {
 
   useEffect(async () => {
     await fetch(`${url}/v1/houses`, {
-      headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+      // headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     })
       .then((res) => res.json())
       .then((res) => setData(res.dataList[0]));
@@ -126,15 +126,15 @@ export const Homepage = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.{" "}
       </Smallone>
       <Loading>
-        {!localStorage.getItem("token") && (
-          <>
-            <h1>Log in first in Sign in page!</h1>
-            <Center>Loading...</Center>
-            <div class="progress">
-              <div class="indeterminate"></div>
-            </div>
-          </>
-        )}
+        {/* {!localStorage.getItem("token") && ( */}
+        <>
+          {/* <h1>Log in first in Sign in page!</h1> */}
+          <Center>Loading...</Center>
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </>
+        {/* )} */}
       </Loading>
       <Mapping>
         <Good>
