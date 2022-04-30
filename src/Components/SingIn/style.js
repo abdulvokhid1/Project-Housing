@@ -395,10 +395,6 @@ const Miami = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
-  /* or 286% */
-
-  /* Color / 5 */
-
   color: #ffffff;
 `;
 const New = styled.p`
@@ -407,10 +403,6 @@ const New = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
-  /* or 286% */
-
-  /* Color / 5 */
-
   color: #ffffff;
 `;
 export {

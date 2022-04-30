@@ -4,6 +4,9 @@ import { ReactComponent as heart2 } from "../Assets/icons/heart2.svg";
 import { ReactComponent as plus } from "../Assets/icons/plus.svg";
 import { ReactComponent as ruler } from "../Assets/icons/ruler.svg";
 import { ReactComponent as resize } from "../Assets/icons/resize.svg";
+import { ReactComponent as search } from "../Assets/icons/search.svg";
+import { ReactComponent as group } from "../Assets/icons/group.svg";
+
 const Container = styled.div`
   width: 100%;
   height: 2500px;
@@ -14,6 +17,7 @@ const Container = styled.div`
 
 const Mapping = styled.div`
   display: flex;
+  margin-top: -500px;
   /* flex-direction: column; */
   /* border: 1px solid black; */
   width: 100%;
@@ -98,12 +102,20 @@ const Button = styled.div`
   background: #ffffff;
   box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
   border-radius: 3px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 70px;
   display: flex;
+  width: 1000px;
+  margin-left: -150px;
+  align-items: center;
+`;
+const SearchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
 `;
 const Type = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 190px;
 `;
 const Propertytype = styled.p`
@@ -125,7 +137,7 @@ const Property = styled.p`
 `;
 
 const Location = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 190px;
 `;
 const Locationtype = styled.p`
@@ -147,8 +159,8 @@ const Locationall = styled.p`
 `;
 
 const Searchword = styled.div`
-  border: 1px solid blue;
-  width: 190px;
+  /* border: 1px solid blue; */
+  width: 250px;
 `;
 const Searchtype = styled.p`
   font-family: "Cerebri Sans";
@@ -167,6 +179,7 @@ const Searchenter = styled.p`
   line-height: 18px;
   color: #696969;
 `;
+const SearchIcon = styled(search)``;
 const Discover = styled.p`
   font-family: "Cerebri Sans";
   font-style: normal;
@@ -411,43 +424,169 @@ const Choose_Small = styled.p`
   color: #696969;
   margin-top: -30px;
 `;
+
+const DfWrapping = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  justify-content: space-between;
+`;
+const GroupIcon = styled(group)``;
+const WordAdvanced = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0d263b;
+  margin-left: 10px;
+`;
+const SearchButton = styled.div`
+  display: flex;
+  align-items: center;
+  background: #0061df;
+  border-radius: 3px;
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: #ffffff;
+  width: 120px;
+
+  text-align: center;
+`;
+const IconS = styled(search)`
+  color: white;
+  margin-left: 5px;
+`;
 const Mapping_Wrapper = styled.div`
   display: flex;
-
   justify-content: space-around;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 1320px;
   height: 300px;
   margin-left: 100px;
 `;
-const Message = styled.img`
-  background: blue;
-`;
-const Border_Making = styled.div`
+const IconsWrapper = styled.div`
   display: flex;
+  /* border: 1px solid blue; */
   flex-direction: column;
-  border: 1px solid black;
   width: 300px;
-  height: 300px;
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
+  border-radius: 3px;
 `;
-const Wide = styled.h1`
+const MapIcons = styled.img`
+  width: 70px;
+  height: 70px;
+  /* margin-left: 80px; */
+  margin: auto;
+  /* color: white; */
+
+  /* :hover {
+    background: #0061df;
+    border-radius: 28px;
+    padding: 18px;
+    color: white;
+  } */
+`;
+const MapTitles = styled.p`
   font-family: "Cerebri Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
-  /* identical to box height */
-
   text-align: center;
-
-  /* Color / 2 */
-
   color: #0d263b;
 `;
+const MapText = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #696969;
+`;
+const ExploreWrapper = styled.div`
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+`;
+const ExWord_Wrapper = styled.div``;
+const ExWord = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #0d263b;
+`;
+const ExSmall = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+`;
+const Apartment_Wrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+`;
+const Map_Wrapper = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${landing});
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+  margin-left: 3px;
+  margin-right: 3px;
+`;
+const House_Icons = styled.img`
+  margin-left: 115px;
+  margin-top: 110px;
+`;
+
+const House_Name = styled.p`
+  /* margin: auto; */
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 70px;
+`;
 export {
-  Wide,
-  Border_Making,
-  Message,
+  House_Name,
+  House_Icons,
+  Map_Wrapper,
+  Apartment_Wrapper,
+  ExSmall,
+  ExWord,
+  ExWord_Wrapper,
+  ExploreWrapper,
+  MapIcons,
+  MapText,
+  MapTitles,
+  IconsWrapper,
+  IconS,
+  GroupIcon,
+  WordAdvanced,
+  SearchButton,
+  SearchWrapper,
+  DfWrapping,
+  SearchIcon,
   Mapping_Wrapper,
   Choose_Word,
   Choose_Small,

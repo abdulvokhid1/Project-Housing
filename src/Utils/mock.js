@@ -19,7 +19,10 @@ import Invoices from "../Components/Invoices";
 import Inbox from "../Components/Inbox";
 import Loggingout from "../Components/Loggingout";
 import { ReactComponent as inbox } from "../Components/Assets/icons/inbox.svg";
-
+import smile from "../Components/Assets/icons/smile.svg";
+import iconhome from "../Components/Assets/icons/iconhome.svg";
+import iconphone from "../Components/Assets/icons/iconphone.svg";
+import iconmap from "../Components/Assets/icons/iconmap.svg";
 export const navbar = [
   {
     id: 1,
@@ -214,25 +217,25 @@ export const recentcode = [
 export const choosing = [
   {
     id: 1,
-    icon: { inbox },
+    icon: iconmap,
     title: "Trusted By Thousands",
     text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
   },
   {
     id: 2,
-    icon: "",
+    icon: iconhome,
     title: "Wide Range Of Properties",
     text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
   },
   {
     id: 3,
-    icon: "",
+    icon: iconphone,
     title: "Financing Made Easy",
     text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
   },
   {
     id: 4,
-    icon: "",
+    icon: iconmap,
     title: "See Neighborhoods",
     text: "With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.",
   },

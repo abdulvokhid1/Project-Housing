@@ -69,9 +69,29 @@ import {
   Message,
   Border_Making,
   Wide,
+  SearchIcon,
+  DfWrapping,
+  SearchWrapper,
+  GroupIcon,
+  WordAdvanced,
+  SearchButton,
+  IconS,
+  IconsWrapper,
+  MapIcons,
+  MapTitles,
+  MapText,
+  ExploreWrapper,
+  ExWord_Wrapper,
+  ExWord,
+  ExSmall,
+  Apartment_Wrapper,
+  Map_Wrapper,
+  House_Icons,
+  House_Name,
 } from "./style";
 import { choosing } from "../../Utils/mock";
 import { Img } from "../Dashboard/style";
+import { apartment } from "../../mock/apartment";
 const { REACT_APP_BASE_URL: url } = process.env;
 export const Homepage = () => {
   const [data, setData] = useState([]);
@@ -116,8 +136,19 @@ export const Homepage = () => {
             </Location>
             <Searchword>
               <Searchtype>Search</Searchtype>
-              <Searchenter>Enter Keywords</Searchenter>
+              <DfWrapping>
+                <Searchenter>Enter Keywords</Searchenter>
+                <SearchIcon />
+              </DfWrapping>
             </Searchword>
+            <SearchWrapper>
+              <GroupIcon />
+              <WordAdvanced>Advanced Search</WordAdvanced>
+              <SearchButton>
+                <IconS />
+                <p>Search</p>
+              </SearchButton>
+            </SearchWrapper>
           </Button>
         </Centerdiv>
       </Search>
@@ -201,15 +232,34 @@ export const Homepage = () => {
         <Mapping_Wrapper>
           {choosing.map((value) => {
             return (
-              <Border_Making>
-                <h1>{value.id}</h1>;
-                <Message src={value?.icon} />
-                <Wide>{value?.title}</Wide>
-              </Border_Making>
+              <IconsWrapper key={value.id}>
+                <MapIcons src={value.icon} />
+                <MapTitles>{value.title}</MapTitles>
+                <MapText>{value.text}</MapText>
+              </IconsWrapper>
             );
           })}
         </Mapping_Wrapper>
       </Choose_Wrapper>
+      <ExploreWrapper>
+        <ExWord_Wrapper>
+          <ExWord>Explore Our Properties</ExWord>
+          <ExSmall>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reiciendis, nihil.
+          </ExSmall>
+        </ExWord_Wrapper>
+        <Apartment_Wrapper>
+          {apartment.map((value) => {
+            return (
+              <Map_Wrapper key={value.id}>
+                <House_Icons src={value.icon} />
+                <House_Name>{value.name}</House_Name>
+              </Map_Wrapper>
+            );
+          })}
+        </Apartment_Wrapper>
+      </ExploreWrapper>
     </Container>
   );
 };
