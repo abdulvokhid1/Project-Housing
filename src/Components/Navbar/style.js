@@ -1,22 +1,25 @@
 import styled from "styled-components";
+import landing from "../Assets/images/landing.png";
 import term from "../Assets/images/term.png";
 
 const Container = styled.div`
   display: flex;
-  /* flex-direction: column; */
   position: relative;
-  /* background: black; */
-  /* background: ${`url(${term})`}; */
   height: 130px;
   background-size: 100% 100%;
   object-fit: cover;
   background-repeat: no-repeat;
-  /* border: 1px solid red; */
   border-bottom: 1px solid #e6e9ec;
   box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  top: 0%;
+  /* background-color: #7a8691; */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${landing});
+  background-repeat: no-repeat;
+  background-size: cover; */
 `;
 const Iconhouzing = styled.div`
   display: flex;

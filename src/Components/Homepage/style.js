@@ -1,15 +1,19 @@
 import styled from "styled-components";
+import bigicon from "../Assets/icons/bigicon.png";
+
 import landing from "../Assets/images/landing.png";
+// import landing from "../Assets/images/landing.png";
 import { ReactComponent as heart2 } from "../Assets/icons/heart2.svg";
 import { ReactComponent as plus } from "../Assets/icons/plus.svg";
 import { ReactComponent as ruler } from "../Assets/icons/ruler.svg";
 import { ReactComponent as resize } from "../Assets/icons/resize.svg";
 import { ReactComponent as search } from "../Assets/icons/search.svg";
 import { ReactComponent as group } from "../Assets/icons/group.svg";
+import { ReactComponent as telegramicon } from "../Assets/icons/telegramicon.svg";
 
 const Container = styled.div`
   width: 100%;
-  height: 2500px;
+  height: 3320px;
   position: absolute;
   position: sticky;
   position: absolute;
@@ -180,7 +184,7 @@ const Searchenter = styled.p`
   color: #696969;
 `;
 const SearchIcon = styled(search)``;
-const Discover = styled.p`
+const Discover2 = styled.p`
   font-family: "Cerebri Sans";
   font-style: normal;
   font-weight: 600;
@@ -455,6 +459,7 @@ const SearchButton = styled.div`
   margin-left: 10px;
   color: #ffffff;
   width: 120px;
+  margin-left: 40px;
 
   text-align: center;
 `;
@@ -514,7 +519,7 @@ const MapText = styled.p`
 const ExploreWrapper = styled.div`
   width: 100%;
   height: 500px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 `;
 const ExWord_Wrapper = styled.div``;
 const ExWord = styled.p`
@@ -550,6 +555,7 @@ const Map_Wrapper = styled.div`
   height: 350px;
   margin-left: 3px;
   margin-right: 3px;
+  border-radius: 15px;
 `;
 const House_Icons = styled.img`
   margin-left: 115px;
@@ -567,7 +573,281 @@ const House_Name = styled.p`
   color: #ffffff;
   margin-top: 70px;
 `;
+const Trends = styled.div`
+  width: 100%;
+  /* margin-top: -100px; */
+  height: 500px;
+  border: 1px solid white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${landing});
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+const Trends_Wrapper = styled.div`
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  margin-top: 140px;
+`;
+const Trends_Word = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+`;
+const Trends_BigWord = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  width: 585px;
+  margin: auto;
+`;
+const Read_Button = styled.button`
+  background: #0061df;
+  border-radius: 3px;
+  color: red;
+  width: 170px;
+  border: none;
+  margin: auto;
+  margin-top: 20px;
+`;
+const Agent_Wrapper = styled.div`
+  width: 100%;
+  height: 300px;
+  background: #0061df;
+  margin-top: 50px;
+  border: 1px solid white;
+`;
+const AgWord_Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  /* border: 1px solid blue; */
+`;
+const Agent_Word = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-top: 150px;
+  margin: auto;
+`;
+const AgSmall_Word = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 20px;
+`;
+const Now_Button = styled.button`
+  background: #ffffff;
+  border-radius: 3px;
+  color: #0061df;
+  margin: auto;
+  border: none;
+  height: 40px;
+  width: 130px;
+  margin-top: 20px;
+`;
+const Contactbar = styled.div`
+  height: 420px;
+  /* border: 1px solid red; */
+  background: #0d263b;
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+`;
+
+const Bigicon = styled.div`
+  height: 350px;
+  /* border: 1px solid black; */
+  width: 290px;
+  /* margin-left: 50px;
+  margin-top: 43px; */
+  background: ${`url(${bigicon})`};
+  background-size: cover;
+`;
+const Webbar = styled.div`
+  /* border: 1px solid; */
+  height: 230px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 30px;
+`;
+const Contactus = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+`;
+const Addressone = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Iconaddress = styled.img`
+  width: 30px;
+  height: 20px;
+`;
+const Street = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 1px;
+  line-height: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+`;
+const Addresstwo = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Iconaddresstwo = styled.img`
+  width: 23px;
+  height: 13px;
+`;
+const Streetwo = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 1px;
+  line-height: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+`;
+const Addressthree = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Iconaddressthree = styled.img`
+  width: 22px;
+  height: 12px;
+`;
+const Streethree = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 1px;
+  line-height: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+`;
+const Website = styled.div`
+  display: flex;
+  margin-top: 10px;
+`;
+const Face = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Insta = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Twit = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Intime = styled.img`
+  margin-left: 15px;
+  margin-right: 15px;
+`;
+const Discover = styled.div`
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 250px;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
+`;
+const Discoverword = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+`;
+const Chicago = styled.p`
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
+`;
+const Email_Wrapper = styled.div`
+  background: #ffffff;
+  border-radius: 3px;
+  align-items: center;
+  display: flex;
+`;
+const Email_Input = styled.input``;
+const Telegram = styled.div`
+  background: #0061df;
+  border-radius: 3px;
+  width: 60px;
+  height: 50px;
+`;
+const TelegramIcon = styled(telegramicon)`
+  margin-top: 10px;
+`;
 export {
+  TelegramIcon,
+  Telegram,
+  Email_Input,
+  Email_Wrapper,
+  Discover2,
+  // Los,
+  // Miami,
+  // New,
+  Chicago,
+  Discoverword,
+  Discover,
+  Face,
+  Insta,
+  Twit,
+  Intime,
+  Website,
+  Addressthree,
+  Iconaddressthree,
+  Streethree,
+  Addresstwo,
+  Iconaddresstwo,
+  Streetwo,
+  Addressone,
+  Iconaddress,
+  Street,
+  Contactus,
+  Webbar,
+  Bigicon,
+  Contactbar,
+  Now_Button,
+  AgWord_Wrapper,
+  AgSmall_Word,
+  Agent_Word,
+  Agent_Wrapper,
+  Trends_Wrapper,
+  Read_Button,
+  Trends_BigWord,
+  Trends_Word,
+  Trends,
   House_Name,
   House_Icons,
   Map_Wrapper,
@@ -627,7 +907,7 @@ export {
   Well,
   Good,
   Mapping,
-  Discover,
+  // Discover,
   Smallone,
   Property,
   Propertytype,

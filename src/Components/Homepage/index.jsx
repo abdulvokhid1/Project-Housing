@@ -7,6 +7,13 @@ import bed from "../Assets/icons/bed.png";
 import bath from "../Assets/icons/bath.png";
 import garage from "../Assets/icons/garage.png";
 import yard from "../Assets/icons/yard.png";
+import address from "../Assets/icons/address.png";
+import tell from "../Assets/icons/tell.png";
+import facebook from "../Assets/icons/facebook.png";
+import instagram from "../Assets/icons/instagram.png";
+import intime from "../Assets/icons/intime.png";
+import twitter from "../Assets/icons/twitter.png";
+
 import {
   Button,
   Buy,
@@ -88,7 +95,74 @@ import {
   Map_Wrapper,
   House_Icons,
   House_Name,
+  Trends,
+  Trends_Wrapper,
+  Trends_Word,
+  Trends_BigWord,
+  Read_Button,
+  Agent_Wrapper,
+  AgWord_Wrapper,
+  Agent_Word,
+  AgSmall_Word,
+  Now_Button,
+  Contactbar,
+  Bigicon,
+  Contactus,
+  Webbar,
+  Signword,
+  Inputword,
+  Divinput,
+  Loginword,
+  Divregister,
+  Passwordword,
+  Divremember,
+  Rememberme,
+  Forgot,
+  Iconpasword,
+  Wordme,
+  Divbutton,
+  Username,
+  Agensy,
+  Demo,
+  Wordreg,
+  Regbutton,
+  Loginput,
+  Nameinput,
+  Lastinput,
+  Userinput,
+  Passinput,
+  Repassinput,
+  Emailinput,
+  Littlebar,
+  Addressone,
+  Iconaddress,
+  Street,
+  Iconaddresstwo,
+  Streetwo,
+  Addresstwo,
+  Addressthree,
+  Iconaddressthree,
+  Streethree,
+  Website,
+  Face,
+  Insta,
+  Intime,
+  Twit,
+  // Discover,
+  Discoverword,
+  Chicago,
+  Miami,
+  New,
+  Los,
+  Discover2,
+  Email_Wrapper,
+  Email_Input,
+  Telegram,
+  TelegramIcon,
 } from "./style";
+// import bigicon from "../Assets/icons/bigicon.png";
+import message from "../Assets/icons/message.png";
+
 import { choosing } from "../../Utils/mock";
 import { Img } from "../Dashboard/style";
 import { apartment } from "../../mock/apartment";
@@ -152,7 +226,7 @@ export const Homepage = () => {
           </Button>
         </Centerdiv>
       </Search>
-      <Discover>Discover Our Featured Lastings </Discover>
+      <Discover2>Discover Our Featured Lastings </Discover2>
       <Smallone>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.{" "}
       </Smallone>
@@ -260,6 +334,89 @@ export const Homepage = () => {
           })}
         </Apartment_Wrapper>
       </ExploreWrapper>
+      <Trends>
+        <Trends_Wrapper>
+          <Trends_Word>TRENDS</Trends_Word>
+          <Trends_BigWord>
+            Vermont Farmhouse With Antique Jail Is the Week's Most Popular Home
+          </Trends_BigWord>
+          <Read_Button>
+            <Trends_Word>READ MORE</Trends_Word>
+          </Read_Button>
+        </Trends_Wrapper>
+      </Trends>
+      <Agent_Wrapper>
+        <AgWord_Wrapper>
+          <Agent_Word>Become A Real Estate Agent</Agent_Word>
+          <AgSmall_Word>
+            We only work with best companies around the globe
+          </AgSmall_Word>
+          <Now_Button>REGISTER NOW</Now_Button>
+        </AgWord_Wrapper>
+      </Agent_Wrapper>
+      <Contactbar>
+        <Bigicon>
+          <Webbar>
+            <Contactus>Contact Us</Contactus>
+            <Addressone>
+              <Iconaddress src={address} />
+              <Street>
+                329 Queensberry Street, North Melbourne VIC 3051, Australia.
+              </Street>
+            </Addressone>
+            <Addresstwo>
+              <Iconaddresstwo src={tell} />
+              <Streetwo>123 456 7890</Streetwo>
+            </Addresstwo>
+            <Addressthree>
+              <Iconaddressthree src={message} />
+              <Streethree>support@houzing.com</Streethree>
+            </Addressthree>
+            <Website>
+              <Face src={facebook} />
+              <Twit src={twitter} />
+              <Insta src={instagram} />
+              <Intime src={intime} />
+            </Website>
+          </Webbar>
+        </Bigicon>
+        <br />
+        <Discover>
+          <Discoverword>Discover</Discoverword>
+          <Chicago>Chicago</Chicago>
+          <Chicago>Los Angeles</Chicago>
+          <Chicago>Miami</Chicago>
+          <Chicago>New York</Chicago>
+        </Discover>
+        <Discover>
+          <Discoverword>List By Categories</Discoverword>
+          <Chicago>Apartments</Chicago>
+          <Chicago>Condos</Chicago>
+          <Chicago>Houses</Chicago>
+          <Chicago>Offices</Chicago>
+          <Chicago>Retail</Chicago>
+          <Chicago>Villas</Chicago>
+        </Discover>
+        <Discover>
+          <Discoverword>Quick Links</Discoverword>
+          <Chicago>Abiut US</Chicago>
+          <Chicago>Terms & Conditions</Chicago>
+          <Chicago>User's guide</Chicago>
+          <Chicago>Support Center </Chicago>
+          <Chicago>Press Info</Chicago>
+          <Chicago>Contact us</Chicago>
+        </Discover>{" "}
+        <Discover>
+          <Discoverword>Subscribe</Discoverword>
+          <Chicago>We don;t spam so don't worry</Chicago>
+          <Email_Wrapper>
+            <Email_Input type="email" placeholder="Enter your email " />
+            <Telegram>
+              <TelegramIcon />
+            </Telegram>
+          </Email_Wrapper>
+        </Discover>
+      </Contactbar>
     </Container>
   );
 };

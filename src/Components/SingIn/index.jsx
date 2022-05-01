@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import bigicon from "../Assets/icons/bigicon.png";
+import bigicon from "../Assets/icons/bigicon.png";
 import password from "../Assets/icons/password.png";
 import address from "../Assets/icons/address.png";
 import tell from "../Assets/icons/tell.png";
